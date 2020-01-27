@@ -87,9 +87,14 @@
     <Compile Include="Assets\Script\Abstract\ListRef.cs" />
     <Compile Include="Assets\Script\Abstract\Reactor.cs" />
     <Compile Include="Assets\Script\Abstract\VariableRef.cs" />
+    <Compile Include="Assets\Script\Component\KeyInputs.cs" />
+    <Compile Include="Assets\Script\Component\MoveUnit.cs" />
+    <Compile Include="Assets\Script\Component\Updater.cs" />
     <Compile Include="Assets\Script\Generic\IReactGeneric.cs" />
     <Compile Include="Assets\Script\Generic\ReactorGeneric.cs" />
     <Compile Include="Assets\Script\Interface\IReact.cs" />
+    <Compile Include="Assets\Script\Interface\ITrigger.cs" />
+    <Compile Include="Assets\Script\Interface\IUpdate.cs" />
     <Compile Include="Assets\Script\Ref\Array\BoolArrayRef.cs" />
     <Compile Include="Assets\Script\Ref\Array\ColorArrayRef.cs" />
     <Compile Include="Assets\Script\Ref\Array\Float2DArrayRef.cs" />
@@ -112,6 +117,14 @@
     <Compile Include="Assets\Script\Ref\Variable\Texture2DRef.cs" />
     <Compile Include="Assets\Script\Ref\Variable\Vector2Ref.cs" />
     <Compile Include="Assets\Script\Ref\Variable\Vector3Ref.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\DecrementNewUnitCount.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\IncrementNewUnitCount.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\NewUnitAdded.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\NewUnitSpawned.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\NewUnitTimer.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\SpawnNewUnit.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TriggerNewUnitSpawn.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\UpdateNewUnitUI.cs" />
     <Compile Include="Assets\Script\Static\InitPaths.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Development/Unity/Tactistry/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

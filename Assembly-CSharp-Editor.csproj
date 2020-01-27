@@ -63,11 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\ProjectWindow\Script\Abstract\NewInstance.cs" />
-    <Compile Include="Assets\Editor\ProjectWindow\Script\Abstract\TestAbstract.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewEditorInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewRefInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewSOInstance.cs" />
-    <Compile Include="Assets\Editor\ProjectWindow\Script\Class\TestAbstractClass.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Project_Window.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ActiveCategory.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\Categories.cs" />
