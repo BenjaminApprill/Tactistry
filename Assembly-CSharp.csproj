@@ -88,8 +88,11 @@
     <Compile Include="Assets\Script\Abstract\Reactor.cs" />
     <Compile Include="Assets\Script\Abstract\VariableRef.cs" />
     <Compile Include="Assets\Script\Component\KeyInputs.cs" />
+    <Compile Include="Assets\Script\Component\MouseInputs.cs" />
     <Compile Include="Assets\Script\Component\MoveUnit.cs" />
     <Compile Include="Assets\Script\Component\Updater.cs" />
+    <Compile Include="Assets\Script\Enum\MouseAxisEnum.cs" />
+    <Compile Include="Assets\Script\Enum\MouseButtonEnum.cs" />
     <Compile Include="Assets\Script\Generic\IReactGeneric.cs" />
     <Compile Include="Assets\Script\Generic\ReactorGeneric.cs" />
     <Compile Include="Assets\Script\Interface\IReact.cs" />
@@ -117,15 +120,37 @@
     <Compile Include="Assets\Script\Ref\Variable\Texture2DRef.cs" />
     <Compile Include="Assets\Script\Ref\Variable\Vector2Ref.cs" />
     <Compile Include="Assets\Script\Ref\Variable\Vector3Ref.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\CameraPanInput.cs" />
     <Compile Include="Assets\Script\ScriptableObject\DecrementNewUnitCount.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\FDownReactor.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\FUpReactor.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GameUpdates.cs" />
     <Compile Include="Assets\Script\ScriptableObject\IncrementNewUnitCount.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\KeyDownInputs.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\KeyInput.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\KeyUpInputs.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\LeftDownReactor.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\LeftUpReactor.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\MouseAxisInput.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\MouseAxisValues.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\MouseButtonInput.cs" />
     <Compile Include="Assets\Script\ScriptableObject\NewUnitAdded.cs" />
     <Compile Include="Assets\Script\ScriptableObject\NewUnitSpawned.cs" />
     <Compile Include="Assets\Script\ScriptableObject\NewUnitTimer.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\PlayerPansCamera.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\ScrollDownReactor.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\ScrollUpReactor.cs" />
     <Compile Include="Assets\Script\ScriptableObject\SpawnNewUnit.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TestFDown.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TestFUp.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TestLeftDown.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TestLeftUp.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TestScrollDown.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TestScrollUp.cs" />
     <Compile Include="Assets\Script\ScriptableObject\TriggerNewUnitSpawn.cs" />
     <Compile Include="Assets\Script\ScriptableObject\UpdateNewUnitUI.cs" />
     <Compile Include="Assets\Script\Static\InitPaths.cs" />
+    <None Include="Assets\Material\TerrainShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Development/Unity/Tactistry/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -330,6 +355,15 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>E:/Unity/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
     </Reference>
@@ -338,15 +372,6 @@
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>E:/Unity/Editor/2019.2.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

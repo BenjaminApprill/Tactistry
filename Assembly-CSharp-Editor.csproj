@@ -71,12 +71,16 @@
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\Categories.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\CreateNewInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\CreateNewType.cs" />
+    <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\GameCategories.cs" />
+    <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\KeyInputCategories.cs" />
+    <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\MouseInputCategories.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ProjectCollections.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ProjectPaths.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\RefTypes.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\RenameTypes.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\TESTING.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\TypeRefiner.cs" />
+    <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\UpdateInputCategories.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>E:/Development/Unity/Tactistry/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -299,6 +303,15 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
     </Reference>
@@ -307,15 +320,6 @@
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>E:/Development/Unity/Tactistry/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>E:/Development/Unity/Tactistry/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

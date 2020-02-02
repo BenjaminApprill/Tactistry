@@ -1,8 +1,10 @@
 using OdinSerializer;
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
  
-public abstract class Reactor: SerializedScriptableObject
+public abstract class Reactor : OdinSerializer.SerializedScriptableObject
 {
+    [InlineEditor]
     public List<IReact> Reactions;
 
     public void Activate()

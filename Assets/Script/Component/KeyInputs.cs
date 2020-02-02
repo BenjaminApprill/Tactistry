@@ -5,23 +5,30 @@ using UnityEngine;
 
 public class KeyInputs : SerializedMonoBehaviour
 {
-    public ITrigger[] KeyDowns;
-    public ITrigger[] KeyUps;
+    public KeyDownInputs KDI_Ref;
+    public KeyUpInputs KUI_Ref;
     
     void Update()
     {
-        for (int i = 0; i < KeyDowns.Length; i++)
+        for (int i = 0; i < KDI_Ref.KeyDowns.Length; i++)
         {
-            if (Input.GetKeyDown(KeyDowns[i].trigger))
+            if (Input.GetKeyDown(KDI_Ref.KeyDowns[i].Input))
             {
-                KeyDowns[i].Trigger();
+                for (int j = 0; j < KDI_Ref.KeyDowns[i].Reactors.Length; j++)
+                {
+                    KDI_Ref.KeyDowns[i].Reactors[j].Activate();
+                }
             }
         }
-        for (int i = 0; i < KeyUps.Length; i++)
+
+        for (int i = 0; i < KUI_Ref.KeyUps.Length; i++)
         {
-            if(Input.GetKeyUp(KeyUps[i].trigger))
+            if (Input.GetKeyDown(KUI_Ref.KeyUps[i].Input))
             {
-                KeyUps[i].Trigger();
+                for (int j = 0; j < KUI_Ref.KeyUps[i].Reactors.Length; j++)
+                {
+                    KUI_Ref.KeyUps[i].Reactors[j].Activate();
+                }
             }
         }
     }

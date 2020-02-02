@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class Updater : SerializedMonoBehaviour
 {
-    public IUpdate[] Updates;
+    public GameUpdates GU_Ref;
 
     void Update()
     {
-        for (int i = 0; i < Updates.Length; i++)
+        for (int i = 0; i < GU_Ref.Updates.Length; i++)
         {
-            Updates[i].Update();
+            GU_Ref.Updates[i].Update();
         }
     }
 }

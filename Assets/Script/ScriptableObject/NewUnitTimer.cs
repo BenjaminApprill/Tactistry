@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class NewUnitTimer: ScriptableObject, IUpdate
@@ -5,6 +6,7 @@ public class NewUnitTimer: ScriptableObject, IUpdate
     public FloatRef NewUnitSpawnLimiter;
     float currentTimer;
 
+    [InlineEditor]
     public Reactor NewUnitAdded;
 
     public void Update()

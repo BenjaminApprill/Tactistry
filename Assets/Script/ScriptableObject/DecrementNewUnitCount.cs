@@ -6,6 +6,9 @@ public class DecrementNewUnitCount: ScriptableObject, IReact
 
     public void React()
     {
-        NewUnitCount.Val--;
+        if(NewUnitCount.Val > 0)
+        {
+            NewUnitCount.Val--;
+        }
     }
 }
