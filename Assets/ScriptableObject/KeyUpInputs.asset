@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c66d51a1f22d17943bfdc8f764f70dab, type: 3}
   m_Name: KeyUpInputs
   m_EditorClassIdentifier: 
+  KeyUps:
+  - {fileID: 11400000, guid: 705686a019b7a8e47a08851720f047c2, type: 2}

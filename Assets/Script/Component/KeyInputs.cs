@@ -10,7 +10,7 @@ public class KeyInputs : SerializedMonoBehaviour
     
     void Update()
     {
-        for (int i = 0; i < KDI_Ref.KeyDowns.Length; i++)
+        for (int i = 0; i < KDI_Ref.KeyDowns?.Length; i++)
         {
             if (Input.GetKeyDown(KDI_Ref.KeyDowns[i].Input))
             {
@@ -21,9 +21,9 @@ public class KeyInputs : SerializedMonoBehaviour
             }
         }
 
-        for (int i = 0; i < KUI_Ref.KeyUps.Length; i++)
+        for (int i = 0; i < KUI_Ref.KeyUps?.Length; i++)
         {
-            if (Input.GetKeyDown(KUI_Ref.KeyUps[i].Input))
+            if (Input.GetKeyUp(KUI_Ref.KeyUps[i].Input))
             {
                 for (int j = 0; j < KUI_Ref.KeyUps[i].Reactors.Length; j++)
                 {

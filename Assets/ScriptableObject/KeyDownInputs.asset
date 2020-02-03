@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2de0a3223ed37944b56e4236847da05, type: 3}
   m_Name: KeyDownInputs
   m_EditorClassIdentifier: 
+  KeyDowns:
+  - {fileID: 11400000, guid: 16489ba7bd3700a4b89871b846c03c3f, type: 2}

@@ -28,6 +28,8 @@ public class MouseAxisInput: ScriptableObject
         }
     }
 
+    public FloatRef axisValue;
+
     [InlineEditor]
     public Reactor[] Reactors;
 }

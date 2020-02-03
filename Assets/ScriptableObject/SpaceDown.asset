@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413e2f2b97c9b9545b7e0b7b115de8fa, type: 3}
   m_Name: SpaceDown
   m_EditorClassIdentifier: 
+  Input: 32
+  Reactors:
+  - {fileID: 11400000, guid: a64f843baf8bd954ba44679727c1e23a, type: 2}
