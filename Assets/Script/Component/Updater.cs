@@ -9,7 +9,7 @@ public class Updater : SerializedMonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < GU_Ref.Updates?.Length; i++)
+        for (int i = 0; i < GU_Ref.Updates.Length; i++)
         {
             GU_Ref.Updates[i].Update();
         }

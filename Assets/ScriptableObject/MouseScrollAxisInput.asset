@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: MouseScrollAxisInput
   m_EditorClassIdentifier: 
   axis: 0
-  axisValue: {fileID: 0}
-  Reactors: []
+  axisValue: {fileID: 11400000, guid: ca390bd0e1ef54748a829b712a33ae73, type: 2}
+  Reactors:
+  - {fileID: 0}

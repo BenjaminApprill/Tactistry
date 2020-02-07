@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a02ce2c6ade8094cab6bbbcd47c02b2, type: 3}
   m_Name: MousePositionXAxisInput
   m_EditorClassIdentifier: 
-  axis: 0
-  axisValue: {fileID: 0}
-  Reactors: []
+  axis: 1
+  axisValue: {fileID: 11400000, guid: b8aee8e6d29ef69458a838967097b27a, type: 2}
+  Reactors:
+  - {fileID: 0}

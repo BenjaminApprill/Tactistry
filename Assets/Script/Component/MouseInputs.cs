@@ -10,11 +10,11 @@ public class MouseInputs : SerializedMonoBehaviour
     
     public MouseAxisInputs MAI_Ref;
 
-    float axisValue;
+    float axisValue;    
 
     void Update()
     {
-        for (int i = 0; i < MBD_Ref.ButtonDowns?.Length; i++)
+        for (int i = 0; i < MBD_Ref.ButtonDowns.Length; i++)
         {
             if (Input.GetMouseButtonDown((int)MBD_Ref.ButtonDowns[i].ButtonID))
             {
@@ -25,7 +25,7 @@ public class MouseInputs : SerializedMonoBehaviour
             }
         }
 
-        for (int i = 0; i < MBU_Ref.ButtonUps?.Length; i++)
+        for (int i = 0; i < MBU_Ref.ButtonUps.Length; i++)
         {
             if (Input.GetMouseButtonUp((int)MBU_Ref.ButtonUps[i].ButtonID))
             {
@@ -36,7 +36,7 @@ public class MouseInputs : SerializedMonoBehaviour
             }
         }
 
-        for (int i = 0; i < MAI_Ref.AxisInputs?.Length; i++)
+        for (int i = 0; i < MAI_Ref.AxisInputs.Length; i++)
         {
             axisValue = Input.GetAxis(MAI_Ref.AxisInputs[i].axisName);
 
@@ -46,7 +46,7 @@ public class MouseInputs : SerializedMonoBehaviour
 
                 for (int j = 0; j < MAI_Ref.AxisInputs[i].Reactors.Length; j++)
                 {
-                    MAI_Ref.AxisInputs[i].Reactors[j].Activate();
+                    MAI_Ref.AxisInputs[i].Reactors[j]?.Activate();
                 }
             }
         }

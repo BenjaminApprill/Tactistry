@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cf18c1397bb1946aeec2bd15454078, type: 3}
   m_Name: MouseButtonDowns
   m_EditorClassIdentifier: 
+  ButtonDowns: []

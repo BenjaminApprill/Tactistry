@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558e8b9d7aaa6fd4bb6f1cacd58a4a7f, type: 3}
   m_Name: MouseAxisInputs
   m_EditorClassIdentifier: 
+  AxisInputs:
+  - {fileID: 11400000, guid: a55be288de8f5b0439c65c6ee19d334e, type: 2}
+  - {fileID: 11400000, guid: 19f2ea5a1493b594896fdb0763cc5da0, type: 2}
+  - {fileID: 11400000, guid: fdf596a1f3f5bf04593d996416e95687, type: 2}

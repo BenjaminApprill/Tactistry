@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: KeyDownInputs
   m_EditorClassIdentifier: 
   KeyDowns:
-  - {fileID: 11400000, guid: 16489ba7bd3700a4b89871b846c03c3f, type: 2}
+  - {fileID: 11400000, guid: 97593c0e045f8834f9512870c1f6520f, type: 2}
