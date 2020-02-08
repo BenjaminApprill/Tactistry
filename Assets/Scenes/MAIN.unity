@@ -959,9 +959,9 @@ MonoBehaviour:
   mapWidth: 4
   mapHeight: 4
   terrainChunkSize: 10
-  terrainMaterial: {fileID: 2100000, guid: e7549869e8f9e8c45846ecd019912f08, type: 2}
   MapCoords: {fileID: 11400000, guid: a4f845e2c082065499ac13d8b2f002a7, type: 2}
   TerrainChunks: {fileID: 11400000, guid: d30dcae4890ef3341890c8b97045c1d7, type: 2}
+  TerrainMeshes: {fileID: 11400000, guid: 52489d8b18e3c934b9244322ee9f7221, type: 2}
 --- !u!4 &2069192559
 Transform:
   m_ObjectHideFlags: 0

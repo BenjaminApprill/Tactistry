@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa2b221a133a994aa7c06972930b05b, type: 3}
   m_Name: BuildTerrainQuadMesh
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 0}
-  TerrainOffsets: {fileID: 0}
+  Mesh: {fileID: 11400000, guid: 7a590645cd381624ab7cb7ab1aa8dad7, type: 2}
+  TerrainOffsets: {fileID: 11400000, guid: d3825f4e1012fde438b64bac5c18e24d, type: 2}

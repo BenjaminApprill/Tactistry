@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dc8a6413ecf5d41858c58c42c30158, type: 3}
   m_Name: MiddleMouseUp
   m_EditorClassIdentifier: 
-  ButtonID: 0
-  Reactors: []
+  ButtonID: 2
+  Reactors:
+  - {fileID: 11400000, guid: df89175f69bfbd04ba5f9622d11f6d7c, type: 2}

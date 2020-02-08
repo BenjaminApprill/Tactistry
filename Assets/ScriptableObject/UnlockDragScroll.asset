@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9fafce635c99244a6e192925d01b0c, type: 3}
   m_Name: UnlockDragScroll
   m_EditorClassIdentifier: 
+  UMX_Ref: {fileID: 11400000, guid: 4dde3ba9ba8fcc746ac2082782e90c08, type: 2}
+  UMY_Ref: {fileID: 11400000, guid: b0172f66462834b4f98d9412c3e77bca, type: 2}
+  UCX_Ref: {fileID: 11400000, guid: 52d95eb665b5e314eb34600e0007925a, type: 2}
+  UCZ_Ref: {fileID: 11400000, guid: 7c2afb56ab67f2f4ca2e7289bdf42470, type: 2}

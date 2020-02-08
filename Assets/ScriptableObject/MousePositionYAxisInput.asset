@@ -15,4 +15,4 @@ MonoBehaviour:
   axis: 2
   axisValue: {fileID: 11400000, guid: 6f1faf99efab20a4eafcdb6990ceb4e5, type: 2}
   Reactors:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: b0172f66462834b4f98d9412c3e77bca, type: 2}

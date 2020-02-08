@@ -130,9 +130,13 @@
     <Compile Include="Assets\Script\ScriptableObject\CreateNewTerrainPosition.cs" />
     <Compile Include="Assets\Script\ScriptableObject\DecrementNewUnitCount.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GameUpdates.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GenerateHeightMap.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GenerateMap3D.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateMapCoordinates.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GenerateNoiseColors.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainChunks.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainMeshes.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainTexture.cs" />
     <Compile Include="Assets\Script\ScriptableObject\IncrementNewUnitCount.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyDownInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyInput.cs" />

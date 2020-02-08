@@ -12,7 +12,7 @@ public class UpdateCameraZ : ScriptableObject, IReact
     public void React()
     {
         currentPos = Camera.main.transform.position;
-        newZ = currentPos.z + (MousePositionY.Val * DragScrollSpeed.Val);
+        newZ = currentPos.z + (-1*MousePositionY.Val * DragScrollSpeed.Val);
         newPos = new Vector3(currentPos.x, currentPos.y, newZ);
         Camera.main.transform.position = newPos;
     }
