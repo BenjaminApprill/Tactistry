@@ -2,11 +2,12 @@ using UnityEngine;
  
 public class CreateNewTerrainName: ScriptableObject
 {
+    public MapCoordinates MapCoords;
     string newName;
 
-    public string Build(MapCoordinate coord)
+    public string Build(int i)
     {
-        newName = "Terrain: " + coord.XCoord + ", " + coord.ZCoord;
+        newName = "Terrain: " + MapCoords.Array[i].XCoord + ", " + MapCoords.Array[i].ZCoord;
 
         return newName;
     }

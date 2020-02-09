@@ -126,6 +126,7 @@
     <Compile Include="Assets\Script\ScriptableObject\BuildMesh.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainOffsets.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainQuadMesh.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\ConnectTerrainData.cs" />
     <Compile Include="Assets\Script\ScriptableObject\CreateNewTerrainName.cs" />
     <Compile Include="Assets\Script\ScriptableObject\CreateNewTerrainPosition.cs" />
     <Compile Include="Assets\Script\ScriptableObject\DecrementNewUnitCount.cs" />
@@ -134,14 +135,17 @@
     <Compile Include="Assets\Script\ScriptableObject\GenerateMap3D.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateMapCoordinates.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateNoiseColors.cs" />
-    <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainChunks.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainMeshes.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainObjects.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainTexture.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainTextures.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\HeightMap.cs" />
     <Compile Include="Assets\Script\ScriptableObject\IncrementNewUnitCount.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyDownInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyInput.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyUpInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\LockDragScroll.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\MapCoordinates.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MouseAxisInput.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MouseAxisInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MouseAxisValues.cs" />
@@ -154,6 +158,9 @@
     <Compile Include="Assets\Script\ScriptableObject\PlayerBeginsDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\PlayerEndsDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\SpawnNewUnit.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TerrainMeshes.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TerrainObjects.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\TerrainTextures.cs" />
     <Compile Include="Assets\Script\ScriptableObject\TriggerNewUnitSpawn.cs" />
     <Compile Include="Assets\Script\ScriptableObject\UnlockDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\UpdateCameraX.cs" />

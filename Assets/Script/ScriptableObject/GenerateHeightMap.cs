@@ -2,14 +2,14 @@ using UnityEngine;
  
 public class GenerateHeightMap: ScriptableObject
 {
-    public FloatRef TerrainChunkSize_Ref;
+    public IntRef TerrainChunkSize_Ref;
     public FloatRef NoiseScale_Ref;
 
     float[,] heightMap;
 
     public float[,] Build()
     {
-        heightMap = new float[(int)TerrainChunkSize_Ref.Val, (int)TerrainChunkSize_Ref.Val];
+        heightMap = new float[TerrainChunkSize_Ref.Val, TerrainChunkSize_Ref.Val];
 
         for (int y = 0; y < TerrainChunkSize_Ref.Val; y++)
         {

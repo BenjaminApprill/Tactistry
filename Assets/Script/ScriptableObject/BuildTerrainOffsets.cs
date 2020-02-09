@@ -3,6 +3,8 @@ using UnityEngine;
  
 public class BuildTerrainOffsets: ScriptableObject
 {
+    public IntRef TerrainChunkSize;
+
     List<Vector3> offsets;
 
     float halfChunkSize;
@@ -12,11 +14,11 @@ public class BuildTerrainOffsets: ScriptableObject
     Vector3 three;
     Vector3 four;
 
-    public List<Vector3> Build(float terrainChunkSize)
+    public List<Vector3> Build()
     {
         offsets = new List<Vector3>();
 
-        halfChunkSize = terrainChunkSize / 2f;
+        halfChunkSize = TerrainChunkSize.Val / 2f;
 
         one = Vector3.zero;
         one.x -= halfChunkSize;

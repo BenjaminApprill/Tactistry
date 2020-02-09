@@ -3,19 +3,24 @@ using UnityEngine;
  
 public class GenerateTerrainMeshes: ScriptableObject
 {
-    public Material terrainMaterial;
+    public IntRef TerrainChunks;
 
     public BuildTerrainQuadMesh TerrainQuadMesh;
 
-    public void Build(GameObject[] terrainObjects, float terrainChunkSize)
-    {
-        for (int i = 0; i < terrainObjects.Length; i++)
-        {
-            terrainObjects[i].AddComponent<MeshFilter>();
-            terrainObjects[i].AddComponent<MeshRenderer>();
+    Mesh[] meshes;
+    int chunks;
 
-            terrainObjects[i].GetComponent<MeshFilter>().sharedMesh = TerrainQuadMesh.Build(terrainChunkSize);
-            terrainObjects[i].GetComponent<MeshRenderer>().material = terrainMaterial;
+    public Mesh[] Build()
+    {
+        chunks = TerrainChunks.Val;
+
+        meshes = new Mesh[chunks];
+
+        for (int i = 0; i < chunks; i++)
+        {            
+            meshes[i] = TerrainQuadMesh.Build();
         }
+
+        return meshes;
     }
 }

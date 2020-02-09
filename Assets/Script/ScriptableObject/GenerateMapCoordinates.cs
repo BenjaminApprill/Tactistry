@@ -2,19 +2,23 @@ using UnityEngine;
 
 public class GenerateMapCoordinates : ScriptableObject
 {
+    public IntRef MapWidth;
+    public IntRef MapHeight;
+    public IntRef TerrainChunks;
+
     MapCoordinate[] coords;
     MapCoordinate newCoord;
 
-    public MapCoordinate[] Build(int xDim, int zDim)
+    public MapCoordinate[] Build()
     {
-        coords = new MapCoordinate[xDim * zDim];
+        coords = new MapCoordinate[TerrainChunks.Val];
 
-        for (int z = 0; z < zDim; z++)
+        for (int z = 0; z < MapHeight.Val; z++)
         {
-            for (int x = 0; x < xDim; x++)
+            for (int x = 0; x < MapWidth.Val; x++)
             {
                 newCoord = new MapCoordinate(x, z);
-                coords[x + z * xDim] = newCoord;
+                coords[x + z * MapWidth.Val] = newCoord;
             }
         }
 

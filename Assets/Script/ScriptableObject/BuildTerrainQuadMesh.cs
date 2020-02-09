@@ -2,18 +2,18 @@ using System.Collections.Generic;
 using UnityEngine;
  
 public class BuildTerrainQuadMesh: ScriptableObject
-{
+{    
     public BuildMesh Mesh;
 
     public BuildTerrainOffsets TerrainOffsets;
 
     MeshData data;
 
-    public Mesh Build(float terrainChunkSize)
+    public Mesh Build()
     {
         data = new MeshData();
 
-        data.vertices = TerrainOffsets.Build(terrainChunkSize);
+        data.vertices = TerrainOffsets.Build();
 
         List<int> tris = new List<int>();
 

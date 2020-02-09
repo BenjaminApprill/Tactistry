@@ -1,12 +1,16 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
  
 public class GenerateTerrainTexture: ScriptableObject
 {
-    public IntRef MapWidth_Ref;
-    public IntRef MapHeight_Ref;
-    public FloatRef TerrainChunkSize_Ref;
+    public IntRef MapWidth;
+    public IntRef MapHeight;
+    public IntRef TerrainChunkSize;
+    public HeightMap HeightMap_Ref;
 
+    [InlineEditor]
     public GenerateHeightMap HeightMap;
+    [InlineEditor]
     public GenerateNoiseColors NoiseColors;
 
     Texture2D terrainTexture;
@@ -14,16 +18,15 @@ public class GenerateTerrainTexture: ScriptableObject
     int textureX;
     int textureY;
 
-    float[,] heightMap;
     Color[] terrainColors;
 
     public Texture2D Build()
     {
-        textureX = MapWidth_Ref.Val * (int)TerrainChunkSize_Ref.Val;
-        textureY = MapHeight_Ref.Val * (int)TerrainChunkSize_Ref.Val;
+        textureX = MapWidth.Val * TerrainChunkSize.Val;
+        textureY = MapHeight.Val * TerrainChunkSize.Val;
 
-        heightMap = HeightMap.Build();
-        terrainColors = NoiseColors.Build(textureX, textureY, heightMap, MapWidth_Ref.Val);
+        HeightMap_Ref.Array = HeightMap.Build();
+        terrainColors = NoiseColors.Build(textureX, textureY);
 
 
 
