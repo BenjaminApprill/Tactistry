@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
  
@@ -5,6 +6,7 @@ public class GenerateTerrainMeshes: ScriptableObject
 {
     public IntRef TerrainChunks;
 
+    [InlineEditor]
     public BuildTerrainQuadMesh TerrainQuadMesh;
 
     Mesh[] meshes;

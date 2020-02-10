@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9babebb367a4e4280656bd761d54ed, type: 3}
   m_Name: CreateNewTerrainPosition
   m_EditorClassIdentifier: 
+  TerrainChunkSize: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}

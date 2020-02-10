@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7dca27a35fd6aa47a2e5edf196ef45b, type: 3}
   m_Name: MapHeight
   m_EditorClassIdentifier: 
-  Val: 0
+  Val: 4

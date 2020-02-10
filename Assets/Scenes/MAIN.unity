@@ -958,10 +958,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapWidth: 4
   mapHeight: 4
-  terrainChunkSize: 10
-  MapCoords: {fileID: 11400000, guid: a4f845e2c082065499ac13d8b2f002a7, type: 2}
-  TerrainChunks: {fileID: 11400000, guid: d30dcae4890ef3341890c8b97045c1d7, type: 2}
-  TerrainMeshes: {fileID: 11400000, guid: 52489d8b18e3c934b9244322ee9f7221, type: 2}
+  terrainChunkSize: 16
+  MapWidth: {fileID: 11400000, guid: a2cfd18304499be469db5242063c7b5a, type: 2}
+  MapHeight: {fileID: 11400000, guid: 4c9855ec92f4c4b4ebac7b8202b7983c, type: 2}
+  TerrainChunkSize: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
+  TerrainChunks: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
+  Coords: {fileID: 11400000, guid: 4791bf852d25bcd4c80adb3e21eca324, type: 2}
+  Objects: {fileID: 11400000, guid: b0afafd3a8108a148b21170455b3ff56, type: 2}
+  Meshes: {fileID: 11400000, guid: a21900a3ef0aaca48b238cc5233e080b, type: 2}
+  Textures: {fileID: 11400000, guid: 6c9f08a877969ad43a4aab194405f16e, type: 2}
+  GenCoords: {fileID: 11400000, guid: a4f845e2c082065499ac13d8b2f002a7, type: 2}
+  GenObjects: {fileID: 11400000, guid: d30dcae4890ef3341890c8b97045c1d7, type: 2}
+  GenMeshes: {fileID: 11400000, guid: 52489d8b18e3c934b9244322ee9f7221, type: 2}
+  GenTextures: {fileID: 11400000, guid: d75fe9e3ebeb8624690c0a748c1adfc7, type: 2}
+  Terrain: {fileID: 11400000, guid: 67cc286ed1a38404bb23e85ece1ec4eb, type: 2}
 --- !u!4 &2069192559
 Transform:
   m_ObjectHideFlags: 0

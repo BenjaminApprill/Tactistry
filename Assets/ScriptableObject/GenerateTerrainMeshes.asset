@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5ce5a843debf1489b3820d490b7de6, type: 3}
   m_Name: GenerateTerrainMeshes
   m_EditorClassIdentifier: 
-  terrainMaterial: {fileID: 2100000, guid: e7549869e8f9e8c45846ecd019912f08, type: 2}
+  TerrainChunks: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
   TerrainQuadMesh: {fileID: 11400000, guid: 829ea13a7176bad4db1b75fe392310ee, type: 2}

@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8093bd89ec5a741479b8e42bb1b21088, type: 3}
-  m_Name: ConnectTerrainData
+  m_Script: {fileID: 11500000, guid: e30fa32fcaac1bc478077a1a6925bbc2, type: 3}
+  m_Name: NoiseColors
   m_EditorClassIdentifier: 

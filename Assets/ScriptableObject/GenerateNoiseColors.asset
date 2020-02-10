@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e714caff60905745836ab3417f1484e, type: 3}
   m_Name: GenerateNoiseColors
   m_EditorClassIdentifier: 
+  TerrainChunkSize: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
+  HeightMap: {fileID: 11400000, guid: 27b2ce418af105443aad8acf89419c72, type: 2}

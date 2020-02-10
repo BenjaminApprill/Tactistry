@@ -1,25 +1,30 @@
 using UnityEngine;
  
 public class GenerateNoiseColors: ScriptableObject
-{
-    public IntRef MapWidth;
-    public HeightMap HeightMap_Ref;
+{    
+    public HeightMap HeightMap;
+
+    int mapSizeX;
+    int mapSizeZ;
 
     Color[] terrainColors;
     float heightValue;
     Color newColor;
 
-    public Color[] Build(int textureX, int textureY)
+    public Color[] Build()
     {
-        terrainColors = new Color[textureX * textureY];
+        mapSizeX = HeightMap.Array.GetLength(0);
+        mapSizeZ = HeightMap.Array.GetLength(1);
 
-        for (int y = 0; y < textureY; y++)
+        terrainColors = new Color[mapSizeX * mapSizeZ];
+
+        for (int y = 0; y < mapSizeZ; y++)
         {
-            for (int x = 0; x < textureX; x++)
+            for (int x = 0; x < mapSizeX; x++)
             {
-                heightValue = HeightMap_Ref.Array[x, y];
+                heightValue = HeightMap.Array[x, y];
                 newColor = Color.Lerp(Color.white, Color.black, heightValue);
-                terrainColors[x + y * MapWidth.Val] = newColor;
+                terrainColors[x + y * mapSizeX] = newColor;
             }
         }
 

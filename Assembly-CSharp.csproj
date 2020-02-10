@@ -124,9 +124,9 @@
     <Compile Include="Assets\Script\Ref\Variable\Vector2Ref.cs" />
     <Compile Include="Assets\Script\Ref\Variable\Vector3Ref.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildMesh.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\BuildTerrain.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainOffsets.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainQuadMesh.cs" />
-    <Compile Include="Assets\Script\ScriptableObject\ConnectTerrainData.cs" />
     <Compile Include="Assets\Script\ScriptableObject\CreateNewTerrainName.cs" />
     <Compile Include="Assets\Script\ScriptableObject\CreateNewTerrainPosition.cs" />
     <Compile Include="Assets\Script\ScriptableObject\DecrementNewUnitCount.cs" />
@@ -155,6 +155,7 @@
     <Compile Include="Assets\Script\ScriptableObject\NewUnitAdded.cs" />
     <Compile Include="Assets\Script\ScriptableObject\NewUnitSpawned.cs" />
     <Compile Include="Assets\Script\ScriptableObject\NewUnitTimer.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\NoiseColors.cs" />
     <Compile Include="Assets\Script\ScriptableObject\PlayerBeginsDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\PlayerEndsDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\SpawnNewUnit.cs" />

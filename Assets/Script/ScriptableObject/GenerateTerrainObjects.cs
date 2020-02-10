@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
  
 public class GenerateTerrainObjects: ScriptableObject
@@ -6,7 +7,9 @@ public class GenerateTerrainObjects: ScriptableObject
     public Transform TerrainManager;
     public GameObject terrainChunkPrefab;
 
+    [InlineEditor]
     public CreateNewTerrainName TerrainName;
+    [InlineEditor]
     public CreateNewTerrainPosition TerrainPosition;
 
     GameObject[] chunkObjs;

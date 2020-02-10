@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9330891b23d47f0469cdaa2fcdd2859f, type: 3}
   m_Name: BuildTerrainOffsets
   m_EditorClassIdentifier: 
+  TerrainChunkSize: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}

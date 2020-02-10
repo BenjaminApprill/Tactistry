@@ -1,10 +1,11 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
  
 public class BuildTerrainQuadMesh: ScriptableObject
 {    
     public BuildMesh Mesh;
-
+    [InlineEditor]
     public BuildTerrainOffsets TerrainOffsets;
 
     MeshData data;
@@ -14,6 +15,7 @@ public class BuildTerrainQuadMesh: ScriptableObject
         data = new MeshData();
 
         data.vertices = TerrainOffsets.Build();
+
 
         List<int> tris = new List<int>();
 
@@ -26,6 +28,17 @@ public class BuildTerrainQuadMesh: ScriptableObject
         tris.Add(3);
 
         data.triangles = tris;
+
+
+        List<Vector2> uvs = new List<Vector2>();
+
+        uvs.Add(new Vector2(0f, 0f));
+        uvs.Add(new Vector2(0f, 1f));
+        uvs.Add(new Vector2(1f, 1f));
+        uvs.Add(new Vector2(1f, 0f));
+
+        data.uvs = uvs;
+
 
         return Mesh.Build(data);
     }

@@ -5,15 +5,28 @@ using UnityEngine;
 
 public class TerrainManager : MonoBehaviour
 {
-    public IntRef MapWidth;
+    public int mapWidth;
+    public int mapHeight;
+    public int terrainChunkSize;
+
+    public IntRef MapWidth;    
     public IntRef MapHeight;
+    public IntRef TerrainChunkSize;
     public IntRef TerrainChunks;
+
+    public HeightMap HeightMap;
+    public NoiseColors NoiseColors;
 
     public MapCoordinates Coords;
     public TerrainObjects Objects;
     public TerrainMeshes Meshes;
     public TerrainTextures Textures;
-    
+
+    [InlineEditor]
+    public GenerateHeightMap GenHeightMap;
+    [InlineEditor]
+    public GenerateNoiseColors GenNoiseColors;
+
     [InlineEditor]
     public GenerateMapCoordinates GenCoords;
     [InlineEditor]
@@ -23,18 +36,24 @@ public class TerrainManager : MonoBehaviour
     [InlineEditor]
     public GenerateTerrainTextures GenTextures;
     [InlineEditor]
-    public ConnectTerrainData data;
+    public BuildTerrain Terrain;
 
     void Start()
     {
-        TerrainChunks.Val = MapWidth.Val * MapHeight.Val;
+        MapWidth.Val = mapWidth;
+        MapHeight.Val = mapHeight;
+        TerrainChunkSize.Val = terrainChunkSize;
+
+        TerrainChunks.Val = mapWidth * mapHeight;
+
+        HeightMap.Array = GenHeightMap.Build();
+        NoiseColors.Array = GenNoiseColors.Build();
 
         Coords.Array = GenCoords.Build();
         Objects.Array = GenObjects.Build();
         Meshes.Array =  GenMeshes.Build();
         Textures.Array = GenTextures.Build();
 
-
-
+        Terrain.Build();
     }
 }
