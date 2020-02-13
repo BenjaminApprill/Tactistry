@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b618735b1011140ad7176867510197, type: 3}
   m_Name: GenerateHeightMap
   m_EditorClassIdentifier: 
+  MapWidth: {fileID: 11400000, guid: a2cfd18304499be469db5242063c7b5a, type: 2}
+  MapHeight: {fileID: 11400000, guid: 4c9855ec92f4c4b4ebac7b8202b7983c, type: 2}
   MapChunkSize: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
   NoiseScale: {fileID: 11400000, guid: c4f771cf40bdb904992cc64ad677de76, type: 2}
+  NoisePasses: {fileID: 11400000, guid: 35d45c6c5045e164382058d4962416eb, type: 2}
+  Isolation: {fileID: 11400000, guid: e96346a4f4d48474a9d188a86b8b8649, type: 2}
+  Constriction: {fileID: 11400000, guid: f8310cfc0c403b647a773f9bc39f3c41, type: 2}

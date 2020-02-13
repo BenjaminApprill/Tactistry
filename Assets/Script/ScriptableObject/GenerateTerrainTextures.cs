@@ -3,11 +3,13 @@ using UnityEngine;
  
 public class GenerateTerrainTextures: ScriptableObject
 {
+    [Required]
     public IntRef TerrainChunks;
 
+    [Required]
     public MapCoordinates Coords;
-
-    [InlineEditor]
+    
+    [Required]
     public GenerateTerrainTexture TerrainTexture;
 
     Texture2D[] textures;

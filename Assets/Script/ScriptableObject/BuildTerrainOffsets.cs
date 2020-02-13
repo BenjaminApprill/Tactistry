@@ -1,9 +1,11 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 public class BuildTerrainOffsets: ScriptableObject
 {
-    public IntRef TerrainChunkSize;
+    [Required]
+    public IntRef MapSize;
 
     List<Vector3> offsets;
 
@@ -18,7 +20,7 @@ public class BuildTerrainOffsets: ScriptableObject
     {
         offsets = new List<Vector3>();
 
-        halfChunkSize = TerrainChunkSize.Val / 2f;
+        halfChunkSize = MapSize.Val / 2f;
 
         one = Vector3.zero;
         one.x -= halfChunkSize;

@@ -1,12 +1,8 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
- 
-public class GenerateHeightMap: ScriptableObject
-{
-    public IntRef MapWidth;
-    public IntRef MapHeight;
-    public IntRef MapChunkSize;
-    public FloatRef NoiseScale;
 
+public class GenerateHeightMap: ScriptableObject
+{    
     float[,] heightMap;
 
     int mapSizeX;
@@ -16,23 +12,61 @@ public class GenerateHeightMap: ScriptableObject
     float sampleY;
     float perlinValue;
 
-    public float[,] Build()
+    float isolation;
+    float constriction;
+
+    float noiseHeight;
+
+    float maxNoiseHeight;
+    float minNoiseHeight;
+
+    public float[,] Build(TerrainDataModel TerrainData)
     {
-        mapSizeX = MapWidth.Val * MapChunkSize.Val;
-        mapSizeZ = MapHeight.Val * MapChunkSize.Val;
+        mapSizeX = TerrainData.MapWidth.Val * TerrainData.TerrainChunkSize.Val;
+        mapSizeZ = TerrainData.MapHeight.Val * TerrainData.TerrainChunkSize.Val;
 
         heightMap = new float[mapSizeX, mapSizeZ];
+
+        maxNoiseHeight = float.MinValue;
+        minNoiseHeight = float.MaxValue;
 
         for (int y = 0; y < mapSizeZ; y++)
         {
             for (int x = 0; x < mapSizeX; x++)
             {
-                sampleX = x / NoiseScale.Val;
-                sampleY = y / NoiseScale.Val;
+                isolation = 1f;
+                constriction = 1f;
+                noiseHeight = 0f;
 
-                perlinValue = Mathf.PerlinNoise(sampleX, sampleY);
+                for (int i = 0; i < TerrainData.NoisePasses.Val; i++)
+                {
+                    sampleX = (x + TerrainData.offsetX ) / TerrainData.NoiseScale.Val * isolation;
+                    sampleY = (y + TerrainData.offsetZ) / TerrainData.NoiseScale.Val * isolation ;
 
-                heightMap[x, y] = perlinValue;
+                    perlinValue = Mathf.PerlinNoise(sampleX, sampleY) * 2 - 1;
+                    noiseHeight += perlinValue * constriction;
+
+                    isolation *= TerrainData.Isolation.Val;
+                    constriction *= TerrainData.Constriction.Val;
+                }
+
+                if(noiseHeight > maxNoiseHeight)
+                {
+                    maxNoiseHeight = noiseHeight;
+                }else if(noiseHeight < minNoiseHeight)
+                {
+                    minNoiseHeight = noiseHeight;
+                }
+
+                heightMap[x, y] = noiseHeight;
+            }
+        }
+
+        for (int y = 0; y < mapSizeZ; y++)
+        {
+            for (int x = 0; x < mapSizeX; x++)
+            {
+                heightMap[x, y] = Mathf.InverseLerp(minNoiseHeight, maxNoiseHeight, heightMap[x, y]);
             }
         }
 

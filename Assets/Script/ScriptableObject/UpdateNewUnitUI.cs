@@ -1,7 +1,8 @@
+using OdinSerializer;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UpdateNewUnitUI : ScriptableObject, IReact
+public class UpdateNewUnitUI : SerializedScriptableObject, IReact
 {
     public GameObject NewUnitCountUI;
     public IntRef NewUnitCount;

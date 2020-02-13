@@ -4,8 +4,9 @@ using UnityEngine;
  
 public class BuildTerrainQuadMesh: ScriptableObject
 {    
+    [Required]
     public BuildMesh Mesh;
-    [InlineEditor]
+    [Required]
     public BuildTerrainOffsets TerrainOffsets;
 
     MeshData data;
@@ -15,7 +16,6 @@ public class BuildTerrainQuadMesh: ScriptableObject
         data = new MeshData();
 
         data.vertices = TerrainOffsets.Build();
-
 
         List<int> tris = new List<int>();
 

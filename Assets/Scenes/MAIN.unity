@@ -956,17 +956,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b05c8100f4a5c541b2eb19de470237b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapWidth: 4
-  mapHeight: 4
-  terrainChunkSize: 16
+  mapWidth: 1
+  mapHeight: 1
+  mapSize: 16
+  terrainChunkSize: 25
+  noisePasses: 2
+  noiseScale: 0.091
+  isolation: 2.01
+  constriction: 0.516
   MapWidth: {fileID: 11400000, guid: a2cfd18304499be469db5242063c7b5a, type: 2}
   MapHeight: {fileID: 11400000, guid: 4c9855ec92f4c4b4ebac7b8202b7983c, type: 2}
+  MapSize: {fileID: 11400000, guid: ab10a25f8a60aa84cad4cc4a7a10d0e2, type: 2}
   TerrainChunkSize: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
-  TerrainChunks: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
+  TerrainChunks: {fileID: 11400000, guid: fdc45b563fff48e4384b7e5bff302e78, type: 2}
+  NoiseScale: {fileID: 11400000, guid: c4f771cf40bdb904992cc64ad677de76, type: 2}
+  NoisePasses: {fileID: 11400000, guid: 35d45c6c5045e164382058d4962416eb, type: 2}
+  Isolation: {fileID: 11400000, guid: e96346a4f4d48474a9d188a86b8b8649, type: 2}
+  Constriction: {fileID: 11400000, guid: f8310cfc0c403b647a773f9bc39f3c41, type: 2}
+  HeightMap: {fileID: 11400000, guid: 27b2ce418af105443aad8acf89419c72, type: 2}
+  NoiseColors: {fileID: 11400000, guid: a5335f8f8c3a5e84e86b6ca702b6e158, type: 2}
+  MapCellColors: {fileID: 11400000, guid: 3c46fe212edf9ee498790a4059541b7a, type: 2}
   Coords: {fileID: 11400000, guid: 4791bf852d25bcd4c80adb3e21eca324, type: 2}
   Objects: {fileID: 11400000, guid: b0afafd3a8108a148b21170455b3ff56, type: 2}
   Meshes: {fileID: 11400000, guid: a21900a3ef0aaca48b238cc5233e080b, type: 2}
   Textures: {fileID: 11400000, guid: 6c9f08a877969ad43a4aab194405f16e, type: 2}
+  GenHeightMap: {fileID: 11400000, guid: 88a1d419a348e53458c2b5b99e0dbc91, type: 2}
+  GenNoiseColors: {fileID: 11400000, guid: 68dfa8ae162ec1f41a60a48418d13d28, type: 2}
+  ColorTerrainCells: {fileID: 11400000, guid: 9f11ecbb97a255a418867c56b9a57dd5, type: 2}
   GenCoords: {fileID: 11400000, guid: a4f845e2c082065499ac13d8b2f002a7, type: 2}
   GenObjects: {fileID: 11400000, guid: d30dcae4890ef3341890c8b97045c1d7, type: 2}
   GenMeshes: {fileID: 11400000, guid: 52489d8b18e3c934b9244322ee9f7221, type: 2}

@@ -1,8 +1,10 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
  
 public class CreateNewTerrainPosition: ScriptableObject
 {
-    public IntRef TerrainChunkSize;
+    [Required]
+    public IntRef MapSize;
 
     Vector3 newPosition;
 
@@ -11,8 +13,8 @@ public class CreateNewTerrainPosition: ScriptableObject
 
     public Vector3 Build(MapCoordinate coord)
     {
-        newPositionX = coord.XCoord * TerrainChunkSize.Val;
-        newPositionZ = coord.ZCoord * TerrainChunkSize.Val;
+        newPositionX = coord.XCoord * MapSize.Val;
+        newPositionZ = coord.ZCoord * MapSize.Val;
 
         newPosition = new Vector3(newPositionX, 0f, newPositionZ);
 

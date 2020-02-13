@@ -3,13 +3,16 @@ using UnityEngine;
  
 public class GenerateTerrainObjects: ScriptableObject
 {
+    [Required]
     public MapCoordinates Coords;
+    [Required]
     public Transform TerrainManager;
+    [Required]
     public GameObject terrainChunkPrefab;
 
-    [InlineEditor]
+    [Required]
     public CreateNewTerrainName TerrainName;
-    [InlineEditor]
+    [Required]
     public CreateNewTerrainPosition TerrainPosition;
 
     GameObject[] chunkObjs;

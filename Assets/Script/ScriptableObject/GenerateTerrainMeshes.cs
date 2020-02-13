@@ -4,9 +4,10 @@ using UnityEngine;
  
 public class GenerateTerrainMeshes: ScriptableObject
 {
+    [Required]
     public IntRef TerrainChunks;
 
-    [InlineEditor]
+    [Required]
     public BuildTerrainQuadMesh TerrainQuadMesh;
 
     Mesh[] meshes;

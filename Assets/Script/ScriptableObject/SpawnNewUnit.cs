@@ -1,6 +1,7 @@
+using OdinSerializer;
 using UnityEngine;
  
-public class SpawnNewUnit: ScriptableObject, IReact
+public class SpawnNewUnit: SerializedScriptableObject, IReact
 {
     public GameObject unitPrefab;
     public Transform parent;

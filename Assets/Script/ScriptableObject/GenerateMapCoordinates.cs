@@ -1,9 +1,13 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class GenerateMapCoordinates : ScriptableObject
 {
+    [Required]
     public IntRef MapWidth;
+    [Required]
     public IntRef MapHeight;
+    [Required]
     public IntRef TerrainChunks;
 
     MapCoordinate[] coords;

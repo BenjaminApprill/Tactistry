@@ -1,15 +1,23 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
- 
+
 public class BuildTerrain: ScriptableObject
 {
+    [Required]
     public IntRef TerrainChunks;
 
+    [Required]
     public MapCoordinates Coords;
+    [Required]
     public TerrainObjects Objects;
+    [Required]
     public TerrainMeshes Meshes;
+    [Required]
     public TerrainTextures Textures;
 
+    [Required]
     public Material TerrainMaterial;
+
     Material newMaterial;
 
     public void Build()

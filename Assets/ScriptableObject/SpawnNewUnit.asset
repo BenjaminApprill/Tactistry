@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd7d952edae20a4992d88526c261aff, type: 3}
   m_Name: SpawnNewUnit
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
   unitPrefab: {fileID: 2642976082849282473, guid: 0ddc47244d322ab4d92adfdfea2b65db,
     type: 3}
   parent: {fileID: 0}

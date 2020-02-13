@@ -3,12 +3,18 @@ using UnityEngine;
  
 public class GenerateTerrainTexture: ScriptableObject
 {
+    [Required]
     public IntRef MapWidth;
+    [Required]
     public IntRef MapHeight;
+    [Required]
     public IntRef TerrainChunkSize;
 
+    [Required]
     public NoiseColors NoiseColors;
-
+    [Required]
+    public MapCellColors MapCellColors;
+    
     Texture2D terrainTexture;
 
     Color[] terrainColors;
@@ -22,6 +28,7 @@ public class GenerateTerrainTexture: ScriptableObject
     int zSize;
 
     int currentIndex;
+    int localIndex;
 
     public Texture2D Build(MapCoordinate coord)
     {
@@ -33,18 +40,26 @@ public class GenerateTerrainTexture: ScriptableObject
         xSize = xStart + TerrainChunkSize.Val;
         zSize = zStart + TerrainChunkSize.Val;
 
+        localIndex = 0;
+        terrainColors = new Color[TerrainChunkSize.Val * TerrainChunkSize.Val];
+
         for (int y = zStart; y < zSize; y++)
         {
             for (int x = xStart; x < xSize; x++)
             {
                 currentIndex = x + y * wholeWidth;
 
-                terrainColors[currentIndex] = NoiseColors.Array[currentIndex];
+                terrainColors[localIndex] = MapCellColors.Array[currentIndex];
+
+                localIndex++;
             }
         }
 
         terrainTexture = new Texture2D(TerrainChunkSize.Val, TerrainChunkSize.Val);
+        terrainTexture.filterMode = FilterMode.Point;
+        terrainTexture.wrapMode = TextureWrapMode.Clamp;
         terrainTexture.SetPixels(terrainColors);
+        terrainTexture.Apply();
 
         return terrainTexture;
     }

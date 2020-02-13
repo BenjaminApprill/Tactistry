@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MapWidth: {fileID: 11400000, guid: a2cfd18304499be469db5242063c7b5a, type: 2}
   MapHeight: {fileID: 11400000, guid: 4c9855ec92f4c4b4ebac7b8202b7983c, type: 2}
-  TerrainChunks: {fileID: 11400000, guid: fcf523d35b3af794788e4511271e4eff, type: 2}
+  TerrainChunks: {fileID: 11400000, guid: fdc45b563fff48e4384b7e5bff302e78, type: 2}
