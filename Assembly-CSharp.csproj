@@ -127,6 +127,7 @@
     <Compile Include="Assets\Script\Ref\Variable\Vector3Ref.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildMesh.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrain.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\BuildTerrainHeightMesh.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainOffsets.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainQuadMesh.cs" />
     <Compile Include="Assets\Script\ScriptableObject\ColorTerrainCells.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="Assets\Script\ScriptableObject\DecrementNewUnitCount.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GameUpdates.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateHeightMap.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\GenerateHeightMeshes.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateMap3D.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateMapCoordinates.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateNoiseColors.cs" />

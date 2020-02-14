@@ -105,6 +105,12 @@ public class TerrainDataModel
     [Required]
     public GenerateTerrainMeshes GenMeshes;
     [Required]
+    public GenerateHeightMeshes GenHeightMeshes;
+    [Required]
+    public BuildTerrainQuadMesh TerrainQuadMesh;
+    [Required]
+    public BuildTerrainHeightMesh BuildTerrainHeightMesh;
+    [Required]
     public GenerateTerrainTextures GenTextures;
 
     [Required]

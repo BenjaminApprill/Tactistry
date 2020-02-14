@@ -13,7 +13,7 @@ public class UpdateMap3D: ScriptableObject
         TerrainData.MapCellColors.Array = TerrainData.ColorTerrainCells.Build();
 
         TerrainData.Objects.Array = TerrainData.GenObjects.Build();
-        TerrainData.Meshes.Array = TerrainData.GenMeshes.Build();
+        TerrainData.Meshes.Array = TerrainData.GenMeshes.Build(TerrainData);
         TerrainData.Textures.Array = TerrainData.GenTextures.Build();
 
         TerrainData.Terrain.Build();

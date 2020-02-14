@@ -7,13 +7,10 @@ public class GenerateTerrainMeshes: ScriptableObject
     [Required]
     public IntRef TerrainChunks;
 
-    [Required]
-    public BuildTerrainQuadMesh TerrainQuadMesh;
-
     Mesh[] meshes;
     int chunks;
 
-    public Mesh[] Build()
+    public Mesh[] Build(TerrainDataModel TerrainData)
     {
         chunks = TerrainChunks.Val;
 
@@ -21,7 +18,7 @@ public class GenerateTerrainMeshes: ScriptableObject
 
         for (int i = 0; i < chunks; i++)
         {            
-            meshes[i] = TerrainQuadMesh.Build();
+            meshes[i] = TerrainData.TerrainQuadMesh.Build(TerrainData, i);
         }
 
         return meshes;

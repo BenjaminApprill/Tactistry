@@ -11,11 +11,11 @@ public class BuildTerrainQuadMesh: ScriptableObject
 
     MeshData data;
 
-    public Mesh Build()
+    public Mesh Build(TerrainDataModel TerrainData, int i)
     {
         data = new MeshData();
 
-        data.vertices = TerrainOffsets.Build();
+        data.vertices = TerrainData.BuildTerrainHeightMesh.Build(TerrainData, i);
 
         List<int> tris = new List<int>();
 
@@ -30,15 +30,14 @@ public class BuildTerrainQuadMesh: ScriptableObject
         data.triangles = tris;
 
 
-        List<Vector2> uvs = new List<Vector2>();
+        //List<Vector2> uvs = new List<Vector2>();
 
-        uvs.Add(new Vector2(0f, 0f));
-        uvs.Add(new Vector2(0f, 1f));
-        uvs.Add(new Vector2(1f, 1f));
-        uvs.Add(new Vector2(1f, 0f));
+        //uvs.Add(new Vector2(0f, 0f));
+        //uvs.Add(new Vector2(0f, 1f));
+        //uvs.Add(new Vector2(1f, 1f));
+        //uvs.Add(new Vector2(1f, 0f));
 
-        data.uvs = uvs;
-
+        //data.uvs = uvs;
 
         return Mesh.Build(data);
     }

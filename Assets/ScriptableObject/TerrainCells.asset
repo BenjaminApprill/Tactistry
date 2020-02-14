@@ -26,7 +26,7 @@ MonoBehaviour:
       Data: 0|MapCellData[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 8
     - Name: 
       Entry: 7
       Data: 1|MapCellData, Assembly-CSharp
@@ -35,10 +35,10 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.07075471
     - Name: 
       Entry: 4
-      Data: 0.232383728
+      Data: 0.30694136
     - Name: 
       Entry: 4
       Data: 1
@@ -50,7 +50,7 @@ MonoBehaviour:
       Data: 
     - Name: heightValue
       Entry: 4
-      Data: 0.4
+      Data: 0.491
     - Name: 
       Entry: 8
       Data: 
@@ -62,13 +62,40 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.0973869562
+      Data: 0.125534
     - Name: 
       Entry: 4
-      Data: 0.6603774
+      Data: 0.67112
+    - Name: 
+      Entry: 4
+      Data: 0.8584906
     - Name: 
       Entry: 4
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: heightValue
+      Entry: 4
+      Data: 0.54
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|MapCellData, Assembly-CSharp
+    - Name: cellColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8773585
+    - Name: 
+      Entry: 4
+      Data: 0.8700156
+    - Name: 
+      Entry: 4
+      Data: 0.442817748
     - Name: 
       Entry: 4
       Data: 0
@@ -83,7 +110,61 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 3|MapCellData, Assembly-CSharp
+      Data: 4|MapCellData, Assembly-CSharp
+    - Name: cellColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.007847638
+    - Name: 
+      Entry: 4
+      Data: 0.8490566
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: heightValue
+      Entry: 4
+      Data: 0.672
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|MapCellData, Assembly-CSharp
+    - Name: cellColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.106748
+    - Name: 
+      Entry: 4
+      Data: 0.6320754
+    - Name: 
+      Entry: 4
+      Data: 0.0149074374
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: heightValue
+      Entry: 4
+      Data: 0.762
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|MapCellData, Assembly-CSharp
     - Name: cellColor
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
@@ -104,13 +185,40 @@ MonoBehaviour:
       Data: 
     - Name: heightValue
       Entry: 4
-      Data: 0.9
+      Data: 0.834
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 4|MapCellData, Assembly-CSharp
+      Data: 7|MapCellData, Assembly-CSharp
+    - Name: cellColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.3962264
+    - Name: 
+      Entry: 4
+      Data: 0.3681915
+    - Name: 
+      Entry: 4
+      Data: 0.3681915
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: heightValue
+      Entry: 4
+      Data: 0.921
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|MapCellData, Assembly-CSharp
     - Name: cellColor
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
