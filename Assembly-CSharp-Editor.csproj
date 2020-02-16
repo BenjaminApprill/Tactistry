@@ -63,17 +63,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\ProjectWindow\Script\Abstract\NewInstance.cs" />
-    <Compile Include="Assets\Editor\ProjectWindow\Script\Abstract\Selectable_SO.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewEditorInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewRefInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewSOInstance.cs" />
-    <Compile Include="Assets\Editor\ProjectWindow\Script\Class\SOFillValidator.cs" />
+    <Compile Include="Assets\Editor\ProjectWindow\Script\Class\PracticeAttribute.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Project_Window.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ActiveCategory.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\Categories.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\CreateNewInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\CreateNewType.cs" />
-    <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\DependantsCollection.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\GameCategories.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\KeyInputCategories.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\MouseInputCategories.cs" />
