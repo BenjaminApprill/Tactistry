@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildTerrainOffsets: ScriptableObject
-{
-    [Required]
+{    
     public IntRef MapSize;
 
     List<Vector3> offsets;

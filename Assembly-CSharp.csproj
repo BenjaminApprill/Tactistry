@@ -90,7 +90,6 @@
     <Compile Include="Assets\Script\Class\MapCellData.cs" />
     <Compile Include="Assets\Script\Class\MapCoordinate.cs" />
     <Compile Include="Assets\Script\Class\MeshData.cs" />
-    <Compile Include="Assets\Script\Class\TerrainDataModel.cs" />
     <Compile Include="Assets\Script\Component\KeyInputs.cs" />
     <Compile Include="Assets\Script\Component\MouseInputs.cs" />
     <Compile Include="Assets\Script\Component\MoveUnit.cs" />
@@ -138,7 +137,6 @@
     <Compile Include="Assets\Script\ScriptableObject\GenerateHeightMap.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateHeightMeshes.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateMap3D.cs" />
-    <Compile Include="Assets\Script\ScriptableObject\GenerateMapCoordinates.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateNoiseColors.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainMeshes.cs" />
     <Compile Include="Assets\Script\ScriptableObject\GenerateTerrainObjects.cs" />

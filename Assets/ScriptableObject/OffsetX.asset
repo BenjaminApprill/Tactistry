@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7dca27a35fd6aa47a2e5edf196ef45b, type: 3}
-  m_Name: MapSize
+  m_Script: {fileID: 11500000, guid: 954aeaf61d7cc12468fd73a143d279f7, type: 3}
+  m_Name: OffsetX
   m_EditorClassIdentifier: 
-  Val: 16
+  Val: 0

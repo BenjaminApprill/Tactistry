@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
  
 public class GenerateTerrainMeshes: ScriptableObject
-{
-    [Required]
+{    
     public IntRef TerrainChunks;
 
+    [InlineEditor]
+    public BuildTerrainQuadMesh BuildTerrainQuadMesh;
+
     Mesh[] meshes;
-    int chunks;
 
-    public Mesh[] Build(TerrainDataModel TerrainData)
+    public Mesh[] Build()
     {
-        chunks = TerrainChunks.Val;
+        meshes = new Mesh[TerrainChunks.Val];
 
-        meshes = new Mesh[chunks];
-
-        for (int i = 0; i < chunks; i++)
+        for (int i = 0; i < TerrainChunks.Val; i++)
         {            
-            meshes[i] = TerrainData.TerrainQuadMesh.Build(TerrainData, i);
+            meshes[i] = BuildTerrainQuadMesh.Build(i);
         }
 
         return meshes;

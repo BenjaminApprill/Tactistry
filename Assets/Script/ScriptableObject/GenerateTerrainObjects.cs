@@ -1,18 +1,17 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
  
-public class GenerateTerrainObjects: ScriptableObject
+public class GenerateTerrainObjects: SerializedScriptableObject
 {
-    [Required]
+    [InlineEditor]
     public MapCoordinates Coords;
-    [Required]
-    public Transform TerrainManager;
-    [Required]
+
+    public Transform TerrainManager;    
     public GameObject terrainChunkPrefab;
 
-    [Required]
+    [InlineEditor]
     public CreateNewTerrainName TerrainName;
-    [Required]
+    [InlineEditor]
     public CreateNewTerrainPosition TerrainPosition;
 
     GameObject[] chunkObjs;
@@ -27,7 +26,7 @@ public class GenerateTerrainObjects: ScriptableObject
         {
             newTerrainPosition = TerrainPosition.Build(Coords.Array[i]);
 
-            newTerrainObject = Instantiate(terrainChunkPrefab, newTerrainPosition, Quaternion.identity, TerrainManager);
+            newTerrainObject = Instantiate(terrainChunkPrefab, Vector3.zero, Quaternion.identity, TerrainManager);
             newTerrainObject.name = TerrainName.Build(i);
             newTerrainObject.AddComponent<MeshFilter>();
             newTerrainObject.AddComponent<MeshRenderer>();

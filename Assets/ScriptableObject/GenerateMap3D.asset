@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da71e380c89d7b74dbd7667cdcce5b68, type: 3}
   m_Name: GenerateMap3D
   m_EditorClassIdentifier: 
+  MapCoordinates: {fileID: 11400000, guid: 4791bf852d25bcd4c80adb3e21eca324, type: 2}
+  HeightMap: {fileID: 11400000, guid: 27b2ce418af105443aad8acf89419c72, type: 2}
+  MapCellColors: {fileID: 11400000, guid: 3c46fe212edf9ee498790a4059541b7a, type: 2}
+  TerrainObjects: {fileID: 11400000, guid: b0afafd3a8108a148b21170455b3ff56, type: 2}
+  TerrainMeshes: {fileID: 11400000, guid: a21900a3ef0aaca48b238cc5233e080b, type: 2}
+  TerrainTextures: {fileID: 11400000, guid: 6c9f08a877969ad43a4aab194405f16e, type: 2}
+  BuildTerrain: {fileID: 11400000, guid: 67cc286ed1a38404bb23e85ece1ec4eb, type: 2}

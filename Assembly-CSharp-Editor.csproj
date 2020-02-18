@@ -66,7 +66,6 @@
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewEditorInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewRefInstance.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Class\NewSOInstance.cs" />
-    <Compile Include="Assets\Editor\ProjectWindow\Script\Class\PracticeAttribute.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\Project_Window.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ActiveCategory.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\Categories.cs" />
@@ -84,6 +83,7 @@
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\TESTING.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\TypeRefiner.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\UpdateInputCategories.cs" />
+    <Compile Include="Assets\Editor\ProjectWindow\Script\Static\TestStaticBehavir.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>E:/Development/Unity/Tactistry/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>

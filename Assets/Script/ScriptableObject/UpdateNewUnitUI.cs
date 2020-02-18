@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class UpdateNewUnitUI : SerializedScriptableObject, IReact
 {
+    [OdinSerialize]
     public GameObject NewUnitCountUI;
     public IntRef NewUnitCount;
 

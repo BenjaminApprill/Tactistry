@@ -1,44 +1,70 @@
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 public class BuildTerrainQuadMesh: ScriptableObject
-{    
-    [Required]
-    public BuildMesh Mesh;
-    [Required]
-    public BuildTerrainOffsets TerrainOffsets;
+{
+    public IntRef TerrainChunkSize;
+    
+    [InlineEditor]
+    public BuildMesh BuildMesh;    
+    [InlineEditor]
+    public BuildTerrainOffsets BuildTerrainOffsets;
+    [InlineEditor]
+    public BuildTerrainHeightMesh BuildTerrainHeightMesh;
 
     MeshData data;
 
-    public Mesh Build(TerrainDataModel TerrainData, int i)
+    public Mesh Build(int index)
     {
         data = new MeshData();
 
-        data.vertices = TerrainData.BuildTerrainHeightMesh.Build(TerrainData, i);
+        //data.vertices = BuildTerrainOffsets.Build();
+        data.vertices = BuildTerrainHeightMesh.Build(index);
 
         List<int> tris = new List<int>();
+        List<Vector2> uvs = new List<Vector2>();
 
-        tris.Add(0);
-        tris.Add(1);
-        tris.Add(2);
+        int vertexIndex = 0;
 
-        tris.Add(0);
-        tris.Add(2);
-        tris.Add(3);
+        for (int y = 0; y < TerrainChunkSize.Val; y++)
+        {
+            for (int x = 0; x < TerrainChunkSize.Val; x++)
+            {
+                uvs.Add(new Vector2(x / (float)TerrainChunkSize.Val, y / (float)TerrainChunkSize.Val));
+
+                if (x < TerrainChunkSize.Val - 1 && y < TerrainChunkSize.Val - 1)
+                {
+                    tris.Add(vertexIndex);
+                    tris.Add(vertexIndex + TerrainChunkSize.Val);
+                    tris.Add(vertexIndex + TerrainChunkSize.Val + 1);
+
+                    tris.Add(vertexIndex);
+                    tris.Add(vertexIndex + TerrainChunkSize.Val + 1);
+                    tris.Add(vertexIndex + 1);
+                }
+
+                vertexIndex++;
+            }
+        }
+
+        //tris.Add(0);
+        //tris.Add(1);
+        //tris.Add(2);
+
+        //tris.Add(0);
+        //tris.Add(2);
+        //tris.Add(3);
 
         data.triangles = tris;
-
-
-        //List<Vector2> uvs = new List<Vector2>();
 
         //uvs.Add(new Vector2(0f, 0f));
         //uvs.Add(new Vector2(0f, 1f));
         //uvs.Add(new Vector2(1f, 1f));
         //uvs.Add(new Vector2(1f, 0f));
 
-        //data.uvs = uvs;
+        data.uvs = uvs;
 
-        return Mesh.Build(data);
+        return BuildMesh.Build(data);
     }
 }

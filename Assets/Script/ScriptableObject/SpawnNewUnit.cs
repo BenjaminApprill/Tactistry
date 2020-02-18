@@ -4,6 +4,7 @@ using UnityEngine;
 public class SpawnNewUnit: SerializedScriptableObject, IReact
 {
     public GameObject unitPrefab;
+    [OdinSerialize]
     public Transform parent;
 
     public void React()

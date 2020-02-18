@@ -1,22 +1,48 @@
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 
 public class GenerateMap3D: ScriptableObject
 {
-    public void Build(TerrainDataModel TerrainData)
+    public IntRef MapWidth;
+    public IntRef MapHeight;
+    public IntRef TerrainChunks;
+
+    [InlineEditor]
+    public MapCoordinates MapCoordinates;
+    [InlineEditor]
+    public HeightMap HeightMap;
+    [InlineEditor]
+    public MapCellColors MapCellColors;
+    [InlineEditor]
+    public TerrainObjects TerrainObjects;
+    [InlineEditor]
+    public TerrainMeshes TerrainMeshes;
+    [InlineEditor]
+    public TerrainTextures TerrainTextures;
+    [InlineEditor]
+    public BuildTerrain BuildTerrain;
+
+    public void Build()
     {
-        TerrainData.SetVariables();
+        TerrainChunks.Val = MapWidth.Val * MapHeight.Val;
 
-        TerrainData.Coords.Array = TerrainData.GenCoords.Build();
+        MapCoordinates.Generate();
 
-        TerrainData.HeightMap.Array = TerrainData.GenHeightMap.Build(TerrainData);
-        TerrainData.MapCellColors.Array = TerrainData.ColorTerrainCells.Build();
+        HeightMap.Generate();
+        MapCellColors.Generate();
 
-        TerrainData.Objects.Array = TerrainData.GenObjects.Build();
-        TerrainData.Meshes.Array = TerrainData.GenMeshes.Build(TerrainData);
-        TerrainData.Textures.Array = TerrainData.GenTextures.Build();
+        TerrainObjects.Generate();
+        TerrainMeshes.Generate();
+        TerrainTextures.Generate();
 
-        TerrainData.Terrain.Build();
+        BuildTerrain.Build();
     }
 
+    //void Open()
+    //{
+    //    string objPath = "Assets/Script/ScriptableObject/" + obj.name + ".asset";
+    //    var ScriptObj = (MonoScript)AssetDatabase.LoadAssetAtPath(objPath, typeof(MonoScript));
+    //    AssetDatabase.OpenAsset(ScriptObj);
+    //}
 }

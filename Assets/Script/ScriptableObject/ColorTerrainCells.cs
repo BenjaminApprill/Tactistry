@@ -1,11 +1,11 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
- 
-public class ColorTerrainCells: ScriptableObject
+
+public class ColorTerrainCells : ScriptableObject
 {
-    [Required]
+    [InlineEditor]
     public HeightMap HeightMap;
-    [Required]
+    [InlineEditor]
     public TerrainCells TerrainCells;
     
     int xLength;

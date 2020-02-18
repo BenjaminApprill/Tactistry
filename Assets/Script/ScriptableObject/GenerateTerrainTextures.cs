@@ -2,14 +2,13 @@ using Sirenix.OdinInspector;
 using UnityEngine;
  
 public class GenerateTerrainTextures: ScriptableObject
-{
-    [Required]
+{    
     public IntRef TerrainChunks;
-
-    [Required]
+    
+    [InlineEditor]
     public MapCoordinates Coords;
     
-    [Required]
+    [InlineEditor]
     public GenerateTerrainTexture TerrainTexture;
 
     Texture2D[] textures;
