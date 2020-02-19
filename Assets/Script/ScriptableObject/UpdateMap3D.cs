@@ -1,21 +1,42 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
  
 public class UpdateMap3D: ScriptableObject
 {
-    //public void MapUpdate(TerrainDataModel TerrainData)
-    //{
-    //    TerrainData.SetVariables();
-    //    TerrainData.ClearTerrainObjects();
+    public IntRef MapWidth;
+    public IntRef MapHeight;
+    public IntRef TerrainChunks;
 
-    //    TerrainData.Coords.Array = TerrainData.GenCoords.Build();
+    [InlineEditor]
+    public MapCoordinates MapCoordinates;
+    [InlineEditor]
+    public HeightMap HeightMap;
+    [InlineEditor]
+    public MapCellColors MapCellColors;
+    [InlineEditor]
+    public TerrainObjects TerrainObjects;
+    [InlineEditor]
+    public TerrainMeshes TerrainMeshes;
+    [InlineEditor]
+    public TerrainTextures TerrainTextures;
+    [InlineEditor]
+    public BuildTerrain BuildTerrain;
 
-    //    TerrainData.HeightMap.Array = TerrainData.GenHeightMap.Build(TerrainData);
-    //    TerrainData.MapCellColors.Array = TerrainData.ColorTerrainCells.Build();
+    public void MapUpdate()
+    {
+        TerrainObjects.ClearObjects();
 
-    //    TerrainData.Objects.Array = TerrainData.GenObjects.Build();
-    //    TerrainData.Meshes.Array = TerrainData.GenMeshes.Build(TerrainData);
-    //    TerrainData.Textures.Array = TerrainData.GenTextures.Build();
+        TerrainChunks.Val = MapWidth.Val * MapHeight.Val;
 
-    //    TerrainData.Terrain.Build();
-    //}
+        MapCoordinates.Generate();
+
+        HeightMap.Generate();
+        MapCellColors.Generate();
+
+        TerrainObjects.Generate();
+        TerrainMeshes.Generate();
+        TerrainTextures.Generate();
+
+        BuildTerrain.Build();
+    }
 }

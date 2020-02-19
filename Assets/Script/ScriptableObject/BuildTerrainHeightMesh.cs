@@ -27,6 +27,9 @@ public class BuildTerrainHeightMesh: ScriptableObject
         xStart = MapCoordinates.Array[i].XCoord * TerrainChunkSize.Val;
         zStart = MapCoordinates.Array[i].ZCoord * TerrainChunkSize.Val;
 
+        xStart -= MapCoordinates.Array[i].XCoord;
+        zStart -= MapCoordinates.Array[i].ZCoord;
+
         xSize = xStart + TerrainChunkSize.Val;
         zSize = zStart + TerrainChunkSize.Val;
 

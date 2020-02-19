@@ -12,4 +12,12 @@ public class TerrainObjects: ScriptableObject
     {
         Array = GenerateTerrainObjects.Build();
     }
+    
+    public void ClearObjects()
+    {
+        for (int i = 0; i < Array.Length; i++)
+        {
+            DestroyImmediate(Array[i]);
+        }
+    }
 }
