@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0216c40aee16e644ca84e9f4213be984, type: 3}
   m_Name: TerrainMeshes
   m_EditorClassIdentifier: 
+  Array:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  GenerateTerrainMeshes: {fileID: 11400000, guid: 52489d8b18e3c934b9244322ee9f7221,
+    type: 2}

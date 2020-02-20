@@ -90,7 +90,9 @@
     <Compile Include="Assets\Script\Class\MapCellData.cs" />
     <Compile Include="Assets\Script\Class\MapCoordinate.cs" />
     <Compile Include="Assets\Script\Class\MeshData.cs" />
+    <Compile Include="Assets\Script\Class\SetRandomStartingPoint.cs" />
     <Compile Include="Assets\Script\Class\TerrainSettings.cs" />
+    <Compile Include="Assets\Script\Component\Initialize.cs" />
     <Compile Include="Assets\Script\Component\KeyInputs.cs" />
     <Compile Include="Assets\Script\Component\MouseInputs.cs" />
     <Compile Include="Assets\Script\Component\MoveUnit.cs" />
@@ -147,12 +149,14 @@
     <Compile Include="Assets\Script\ScriptableObject\HeightMap.cs" />
     <Compile Include="Assets\Script\ScriptableObject\HeightRefiner.cs" />
     <Compile Include="Assets\Script\ScriptableObject\IncrementNewUnitCount.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\InitialReactor.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyDownInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyInput.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyUpInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\LockDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MapCellColors.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MapCoordinates.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\MeshHeightMap.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MouseAxisInput.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MouseAxisInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MouseAxisValues.cs" />

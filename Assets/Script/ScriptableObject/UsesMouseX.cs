@@ -1,6 +1,6 @@
 using UnityEngine;
- 
-public class UsesMouseX: Reactor
+
+public class UsesMouseX : Reactor
 {
-     
+    
 }

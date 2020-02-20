@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954aeaf61d7cc12468fd73a143d279f7, type: 3}
   m_Name: NoiseScale
   m_EditorClassIdentifier: 
-  Val: 94.2
+  Val: 222

@@ -10,6 +10,10 @@ public class TerrainManager : MonoBehaviour
     [OnValueChanged("MapUpdate", true)]    
     public TerrainSettings Settings;
 
+    [OnValueChanged("MapUpdate", true)]
+    [InlineEditor]
+    public TerrainCells TerrainCells;
+
     [HideIf("@GenMap3D != null")]
     public GenerateMap3D GenMap3D;
     [HideIf("@UpdateMap3D != null")]

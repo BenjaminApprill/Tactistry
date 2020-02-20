@@ -50,7 +50,7 @@ MonoBehaviour:
       Data: 
     - Name: heightValue
       Entry: 4
-      Data: 0.491
+      Data: 0.258
     - Name: 
       Entry: 8
       Data: 
@@ -77,7 +77,7 @@ MonoBehaviour:
       Data: 
     - Name: heightValue
       Entry: 4
-      Data: 0.54
+      Data: 0.427
     - Name: 
       Entry: 8
       Data: 
@@ -104,7 +104,7 @@ MonoBehaviour:
       Data: 
     - Name: heightValue
       Entry: 4
-      Data: 0.6
+      Data: 0.455
     - Name: 
       Entry: 8
       Data: 
@@ -131,7 +131,7 @@ MonoBehaviour:
       Data: 
     - Name: heightValue
       Entry: 4
-      Data: 0.672
+      Data: 0.563
     - Name: 
       Entry: 8
       Data: 

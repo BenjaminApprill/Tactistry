@@ -5,11 +5,12 @@ using UnityEngine;
 public class BuildTerrainHeightMesh: ScriptableObject
 {
     public IntRef TerrainChunkSize;
+    public FloatRef TerrainHeightAdjustment;
 
     [InlineEditor]
-    public MapCoordinates MapCoordinates;
+    public MapCoordinates MapCoordinates;    
     [InlineEditor]
-    public HeightMap HeightMap;
+    public MeshHeightMap MeshHeightMap;    
 
     int xStart;
     int zStart;
@@ -19,6 +20,8 @@ public class BuildTerrainHeightMesh: ScriptableObject
 
     List<Vector3> meshVerts;
     Vector3 newVert;
+
+    float newHeight;
 
     public List<Vector3> Build(int i)
     {
@@ -36,8 +39,8 @@ public class BuildTerrainHeightMesh: ScriptableObject
         for (int y = zStart; y < zSize; y++)
         {
             for (int x = xStart; x < xSize; x++)
-            {
-                newVert = new Vector3(x, HeightMap.Array[x, y], y);
+            {                
+                newVert = new Vector3(x, MeshHeightMap.Array[x,y], y);
 
                 meshVerts.Add(newVert);
             }

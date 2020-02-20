@@ -13,6 +13,8 @@ public class GenerateMap3D: ScriptableObject
     [InlineEditor]
     public HeightMap HeightMap;
     [InlineEditor]
+    public MeshHeightMap MeshHeightMap;
+    [InlineEditor]
     public HeightRefiner HeightRefiner;
     [InlineEditor]
     public MapCellColors MapCellColors;
@@ -25,10 +27,8 @@ public class GenerateMap3D: ScriptableObject
     [InlineEditor]
     public BuildTerrain BuildTerrain;    
 
-
     public void Build()
-    {
-        Debug.Log("Test");
+    {        
         TerrainObjects.ClearObjects();
 
         TerrainChunks.Val = MapWidth.Val * MapHeight.Val;
@@ -36,8 +36,9 @@ public class GenerateMap3D: ScriptableObject
         MapCoordinates.Generate();
 
         HeightMap.Generate();
-        HeightRefiner.Refine();
         MapCellColors.Generate();
+        //HeightRefiner.Refine();
+        MeshHeightMap.Generate();
 
         TerrainObjects.Generate();
         TerrainMeshes.Generate();

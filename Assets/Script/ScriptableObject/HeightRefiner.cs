@@ -2,6 +2,7 @@ using UnityEngine;
  
 public class HeightRefiner : ScriptableObject
 {
+    public FloatRef TerrainHeightAdjustment;
     public HeightEvaluationCurve HeightEvaluationCurve;
     public HeightMap HeightMap;
 
@@ -11,8 +12,8 @@ public class HeightRefiner : ScriptableObject
         {
             for (int x = 0; x < HeightMap.Array.GetLength(0); x++)
             {
-                HeightEvaluationCurve.AnimationCurve.Evaluate(HeightMap.Array[x,y]);
-                HeightMap.Array[x, y] *= 10f;
+                HeightEvaluationCurve.AnimationCurve.Evaluate(HeightMap.Array[x, y]);
+                HeightMap.Array[x, y] *= TerrainHeightAdjustment.Val;
             }
         }
 

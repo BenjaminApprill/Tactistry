@@ -1,6 +1,6 @@
 using UnityEngine;
- 
-public class UsesMouseY: Reactor
+
+public class UsesMouseY : Reactor
 {
-     
+    
 }

@@ -1,4 +1,4 @@
-public interface IReact
+﻿public interface IReact
 {
     void React();
 }

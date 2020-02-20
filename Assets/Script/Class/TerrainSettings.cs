@@ -20,6 +20,8 @@ public class TerrainSettings
     public FloatRef Isolation;
     [InlineEditor]    
     public FloatRef Constriction;
+    [InlineEditor]
+    public FloatRef TerrainHeightAdjustment;
     [InlineEditor]    
     public FloatRef OffsetX;
     [InlineEditor]    
