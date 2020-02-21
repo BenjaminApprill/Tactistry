@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MouseButtonUps
   m_EditorClassIdentifier: 
   ButtonUps:
-  - {fileID: 11400000, guid: 7a25864295c58a9479e6af8e4bd8003c, type: 2}
+  - {fileID: 11400000, guid: 9522af7371ca81b48bb99d182945587f, type: 2}

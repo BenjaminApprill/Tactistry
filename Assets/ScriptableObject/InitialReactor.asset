@@ -16,9 +16,9 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 11400000, guid: ecc72c7759db0a843abf0e4a51aa9b43, type: 2}
+    - {fileID: 11400000, guid: b39f32e3260e81f448617638d43f67a7, type: 2}
+    - {fileID: 11400000, guid: 3651e67806f31314fb1d5c053f40c7d9, type: 2}
+    - {fileID: 11400000, guid: 85becb838af5a8144925b5d1f68ae522, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -29,22 +29,16 @@ MonoBehaviour:
       Data: 0|System.Collections.Generic.List`1[[IReact, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
-      Entry: 7
-      Data: 1|SetRandomStartingPoint, Assembly-CSharp
-    - Name: Capital
       Entry: 10
       Data: 0
-    - Name: MainCamera
+    - Name: 
       Entry: 10
       Data: 1
-    - Name: CameraStartScale
+    - Name: 
       Entry: 10
       Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 

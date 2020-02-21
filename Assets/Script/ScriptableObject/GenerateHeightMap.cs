@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class GenerateHeightMap: ScriptableObject
 {
-    public IntRef MapWidth;
-    public IntRef MapHeight;
-    public IntRef TerrainChunkSize;
+    public IntRef MapXSize;
+    public IntRef MapZSize;
+    
     public IntRef NoisePasses;
     public FloatRef NoiseScale;
     public FloatRef Isolation;
@@ -14,9 +14,6 @@ public class GenerateHeightMap: ScriptableObject
     public FloatRef OffsetZ;
 
     float[,] heightMap;
-
-    int mapSizeX;
-    int mapSizeZ;
 
     float sampleX;
     float sampleY;
@@ -32,17 +29,14 @@ public class GenerateHeightMap: ScriptableObject
 
     public float[,] Build()
     {
-        mapSizeX = MapWidth.Val * TerrainChunkSize.Val;
-        mapSizeZ = MapHeight.Val * TerrainChunkSize.Val;
-
-        heightMap = new float[mapSizeX, mapSizeZ];
+        heightMap = new float[MapXSize.Val, MapZSize.Val];
 
         maxNoiseHeight = float.MinValue;
         minNoiseHeight = float.MaxValue;
 
-        for (int y = 0; y < mapSizeZ; y++)
+        for (int y = 0; y < MapZSize.Val; y++)
         {
-            for (int x = 0; x < mapSizeX; x++)
+            for (int x = 0; x < MapXSize.Val; x++)
             {
                 isolation = 1f;
                 constriction = 1f;
@@ -72,9 +66,9 @@ public class GenerateHeightMap: ScriptableObject
             }
         }
 
-        for (int y = 0; y < mapSizeZ; y++)
+        for (int y = 0; y < MapZSize.Val; y++)
         {
-            for (int x = 0; x < mapSizeX; x++)
+            for (int x = 0; x < MapXSize.Val; x++)
             {
                 heightMap[x, y] = Mathf.InverseLerp(minNoiseHeight, maxNoiseHeight, heightMap[x, y]);
             }

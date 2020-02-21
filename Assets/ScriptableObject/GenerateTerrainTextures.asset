@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b296e5107911ab4f891d66a0c7b258b, type: 3}
   m_Name: GenerateTerrainTextures
   m_EditorClassIdentifier: 
-  TerrainChunks: {fileID: 11400000, guid: fdc45b563fff48e4384b7e5bff302e78, type: 2}
-  Coords: {fileID: 11400000, guid: 4791bf852d25bcd4c80adb3e21eca324, type: 2}
-  TerrainTexture: {fileID: 11400000, guid: 04c9a8f4d6c24124c87951b562d5781e, type: 2}
+  TerrainChunks: {fileID: 0}
+  Coords: {fileID: 0}
+  TerrainTexture: {fileID: 0}

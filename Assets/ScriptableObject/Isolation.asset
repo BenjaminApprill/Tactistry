@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954aeaf61d7cc12468fd73a143d279f7, type: 3}
   m_Name: Isolation
   m_EditorClassIdentifier: 
-  Val: 4.95
+  Val: 4.11

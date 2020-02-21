@@ -74,7 +74,6 @@
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\GameCategories.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\KeyInputCategories.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\MouseInputCategories.cs" />
-    <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ObjectsCollection.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ProjectCollections.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ProjectPaths.cs" />
     <Compile Include="Assets\Editor\ProjectWindow\Script\ScriptableObject\ReferenceInjector.cs" />

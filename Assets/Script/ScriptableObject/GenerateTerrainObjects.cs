@@ -4,7 +4,7 @@ using UnityEngine;
 public class GenerateTerrainObjects: SerializedScriptableObject
 {
     [InlineEditor]
-    public MapCoordinates Coords;
+    public MapCoordinates MapCoordinates;
 
     public Transform TerrainManager;    
     public GameObject terrainChunkPrefab;
@@ -20,11 +20,11 @@ public class GenerateTerrainObjects: SerializedScriptableObject
 
     public GameObject[] Build()
     {
-        chunkObjs = new GameObject[Coords.Array.Length];
+        chunkObjs = new GameObject[MapCoordinates.Array.Length];
 
-        for (int i = 0; i < Coords.Array.Length; i++)
+        for (int i = 0; i < MapCoordinates.Array.Length; i++)
         {
-            newTerrainPosition = TerrainPosition.Build(Coords.Array[i]);
+            newTerrainPosition = TerrainPosition.Build(MapCoordinates.Array[i]);
 
             newTerrainObject = Instantiate(terrainChunkPrefab, Vector3.zero, Quaternion.identity, TerrainManager);
             newTerrainObject.name = TerrainName.Build(i);

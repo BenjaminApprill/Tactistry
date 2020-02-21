@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee8373e685c4884698ed462378755c3, type: 3}
   m_Name: BuildTerrain
   m_EditorClassIdentifier: 
-  TerrainChunks: {fileID: 11400000, guid: fdc45b563fff48e4384b7e5bff302e78, type: 2}
-  Coords: {fileID: 11400000, guid: 4791bf852d25bcd4c80adb3e21eca324, type: 2}
-  Objects: {fileID: 11400000, guid: b0afafd3a8108a148b21170455b3ff56, type: 2}
-  Meshes: {fileID: 11400000, guid: a21900a3ef0aaca48b238cc5233e080b, type: 2}
-  Textures: {fileID: 11400000, guid: 6c9f08a877969ad43a4aab194405f16e, type: 2}
+  TerrainChunks: {fileID: 11400000, guid: ef57243d95a6f8143a27ec618f098565, type: 2}
+  MapCoordinates: {fileID: 11400000, guid: d766e750db642dc40b2432251527f55f, type: 2}
+  TerrainObjects: {fileID: 11400000, guid: e63a78df45777a440b5b8d21bf6238f0, type: 2}
+  TerrainMeshes: {fileID: 11400000, guid: f95507ff7b6bdc740b80e61393d9cc59, type: 2}
+  TerrainTextures: {fileID: 11400000, guid: bc485af7486dd914bac4c22fe1f877c6, type: 2}
   TerrainMaterial: {fileID: 2100000, guid: e7549869e8f9e8c45846ecd019912f08, type: 2}

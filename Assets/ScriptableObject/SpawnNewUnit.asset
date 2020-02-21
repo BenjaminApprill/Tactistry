@@ -20,7 +20,9 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
-  unitPrefab: {fileID: 2642976082849282473, guid: 0ddc47244d322ab4d92adfdfea2b65db,
-    type: 3}
+    SerializationNodes:
+    - Name: parent
+      Entry: 6
+      Data: 
+  unitPrefab: {fileID: 0}
   parent: {fileID: 0}

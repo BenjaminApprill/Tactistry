@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70bfa23afc79bf47a14e387f7b8193a, type: 3}
   m_Name: GenerateHeightMeshes
   m_EditorClassIdentifier: 
+  TerrainChunks: {fileID: 0}
+  TerrainChunkSize: {fileID: 0}
+  MapCoordinates: {fileID: 0}
+  HeightMap: {fileID: 0}

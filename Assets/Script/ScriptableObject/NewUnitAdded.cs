@@ -1,9 +1,6 @@
 using UnityEngine;
 
-public class NewUnitAdded : IReact
+public class NewUnitAdded : Reactor
 {
-    public void React()
-    {
-        throw new System.NotImplementedException();
-    }
+    
 }

@@ -5,28 +5,18 @@ using UnityEngine;
 
 public class TerrainManager : MonoBehaviour
 {
-    public bool newMap;
-
     [OnValueChanged("MapUpdate", true)]    
     public TerrainSettings Settings;
 
     [OnValueChanged("MapUpdate", true)]
     [InlineEditor]
     public TerrainCells TerrainCells;
-
-    [HideIf("@GenMap3D != null")]
-    public GenerateMap3D GenMap3D;
+    
     [HideIf("@UpdateMap3D != null")]
     public UpdateMap3D UpdateMap3D;
 
-    void Start()
-    {        
-        GenMap3D.Build();
-    }
-    
     void MapUpdate()
-    {
-        GenMap3D.Build();
-        //UpdateMap3D.MapUpdate();
+    {        
+        UpdateMap3D.MapUpdate();
     }
 }

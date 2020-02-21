@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd6fa78f2ffc7543bc0654f5bcb4725, type: 3}
   m_Name: UpdateCameraZ
   m_EditorClassIdentifier: 
-  MousePositionY: {fileID: 11400000, guid: 6f1faf99efab20a4eafcdb6990ceb4e5, type: 2}
-  DragScrollSpeed: {fileID: 11400000, guid: d40c81c9bce7c0f4cb213c6e81ca4c30, type: 2}
+  MousePositionY: {fileID: 0}
+  DragScrollSpeed: {fileID: 0}

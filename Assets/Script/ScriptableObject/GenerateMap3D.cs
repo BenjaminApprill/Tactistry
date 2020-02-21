@@ -2,12 +2,8 @@ using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
-public class GenerateMap3D: ScriptableObject
+public class GenerateMap3D : ScriptableObject, IReact
 {
-    public IntRef MapWidth;
-    public IntRef MapHeight;
-    public IntRef TerrainChunks;
-
     [InlineEditor]
     public MapCoordinates MapCoordinates;
     [InlineEditor]
@@ -27,11 +23,9 @@ public class GenerateMap3D: ScriptableObject
     [InlineEditor]
     public BuildTerrain BuildTerrain;    
 
-    public void Build()
+    public void React()
     {        
         TerrainObjects.ClearObjects();
-
-        TerrainChunks.Val = MapWidth.Val * MapHeight.Val;
 
         MapCoordinates.Generate();
 

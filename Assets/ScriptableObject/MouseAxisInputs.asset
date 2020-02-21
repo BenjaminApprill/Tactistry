@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: MouseAxisInputs
   m_EditorClassIdentifier: 
   AxisInputs:
-  - {fileID: 11400000, guid: a55be288de8f5b0439c65c6ee19d334e, type: 2}
-  - {fileID: 11400000, guid: 19f2ea5a1493b594896fdb0763cc5da0, type: 2}
-  - {fileID: 11400000, guid: fdf596a1f3f5bf04593d996416e95687, type: 2}
+  - {fileID: 11400000, guid: 5baef6e568d55f54eb3fdfd2ff5694ac, type: 2}
+  - {fileID: 11400000, guid: 974888fb7e814c240bd1feb78ed8d9e0, type: 2}

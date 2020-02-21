@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: TerrainTextures
   m_EditorClassIdentifier: 
   Array: []
+  GenerateTerrainTextures: {fileID: 0}

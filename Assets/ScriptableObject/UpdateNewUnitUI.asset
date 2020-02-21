@@ -15,15 +15,14 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 0}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: NewUnitCountUI
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
   NewUnitCountUI: {fileID: 0}
-  NewUnitCount: {fileID: 11400000, guid: fb2f8b3c036976549b30e94c1c93973e, type: 2}
+  NewUnitCount: {fileID: 0}

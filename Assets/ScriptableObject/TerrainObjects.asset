@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: TerrainObjects
   m_EditorClassIdentifier: 
   Array: []
+  GenerateTerrainObjects: {fileID: 0}

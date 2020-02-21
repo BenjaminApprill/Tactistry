@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ca89c1b0be1bb42887ca30bfa59499, type: 3}
   m_Name: IncrementNewUnitCount
   m_EditorClassIdentifier: 
-  NewUnitCount: {fileID: 11400000, guid: fb2f8b3c036976549b30e94c1c93973e, type: 2}
+  NewUnitCount: {fileID: 0}

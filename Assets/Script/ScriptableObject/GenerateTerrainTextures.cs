@@ -6,7 +6,7 @@ public class GenerateTerrainTextures: ScriptableObject
     public IntRef TerrainChunks;
     
     [InlineEditor]
-    public MapCoordinates Coords;
+    public MapCoordinates MapCoordinates;
     
     [InlineEditor]
     public GenerateTerrainTexture TerrainTexture;
@@ -19,7 +19,7 @@ public class GenerateTerrainTextures: ScriptableObject
 
         for (int i = 0; i < TerrainChunks.Val; i++)
         {
-            textures[i] = TerrainTexture.Build(Coords.Array[i]);
+            textures[i] = TerrainTexture.Build(MapCoordinates.Array[i]);
         }
 
         return textures;

@@ -149,6 +149,7 @@
     <Compile Include="Assets\Script\ScriptableObject\HeightMap.cs" />
     <Compile Include="Assets\Script\ScriptableObject\HeightRefiner.cs" />
     <Compile Include="Assets\Script\ScriptableObject\IncrementNewUnitCount.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\InitializeMapVariables.cs" />
     <Compile Include="Assets\Script\ScriptableObject\InitialReactor.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyDownInputs.cs" />
     <Compile Include="Assets\Script\ScriptableObject\KeyInput.cs" />
@@ -169,6 +170,7 @@
     <Compile Include="Assets\Script\ScriptableObject\NoiseColors.cs" />
     <Compile Include="Assets\Script\ScriptableObject\PlayerBeginsDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\PlayerEndsDragScroll.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\RandomStartingPoint.cs" />
     <Compile Include="Assets\Script\ScriptableObject\SpawnNewUnit.cs" />
     <Compile Include="Assets\Script\ScriptableObject\TerrainCells.cs" />
     <Compile Include="Assets\Script\ScriptableObject\TerrainMeshes.cs" />

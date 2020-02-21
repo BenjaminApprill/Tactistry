@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7de88837de39b4786060f180d010ca, type: 3}
   m_Name: ColorTerrainCells
   m_EditorClassIdentifier: 
-  HeightMap: {fileID: 11400000, guid: 27b2ce418af105443aad8acf89419c72, type: 2}
-  TerrainCells: {fileID: 11400000, guid: f11dd5cc519b96f45b1b3764108d57e1, type: 2}
+  HeightMap: {fileID: 0}
+  TerrainCells: {fileID: 0}

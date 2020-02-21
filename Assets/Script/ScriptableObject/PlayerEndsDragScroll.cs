@@ -1,9 +1,6 @@
 using UnityEngine;
 
-public class PlayerEndsDragScroll : IReact
+public class PlayerEndsDragScroll : Reactor
 {
-    public void React()
-    {
-        throw new System.NotImplementedException();
-    }
+
 }

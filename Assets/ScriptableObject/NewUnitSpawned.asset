@@ -15,33 +15,12 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: dcc41b01135c46848800b6c088a05773, type: 2}
-    - {fileID: 11400000, guid: d14f2636242b9fd4984ab791ec8ebb95, type: 2}
-    - {fileID: 11400000, guid: 1063b34d5fee5974486b9e741965eaf1, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: Reactions
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[IReact, Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
+      Entry: 6
       Data: 

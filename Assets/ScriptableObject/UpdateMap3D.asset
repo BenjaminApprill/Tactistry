@@ -12,3 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698aed1b57e559a499d31cf14fe34061, type: 3}
   m_Name: UpdateMap3D
   m_EditorClassIdentifier: 
+  MapWidth: {fileID: 0}
+  MapHeight: {fileID: 0}
+  TerrainChunks: {fileID: 0}
+  MapCoordinates: {fileID: 0}
+  HeightMap: {fileID: 0}
+  MapCellColors: {fileID: 0}
+  TerrainObjects: {fileID: 0}
+  TerrainMeshes: {fileID: 0}
+  TerrainTextures: {fileID: 0}
+  BuildTerrain: {fileID: 0}

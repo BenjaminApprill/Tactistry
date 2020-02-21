@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15fe47cb5a6de8408a56c8459276ae6, type: 3}
   m_Name: TriggerNewUnitSpawn
   m_EditorClassIdentifier: 
-  TriggerKey: 32
-  NewUnitCount: {fileID: 11400000, guid: fb2f8b3c036976549b30e94c1c93973e, type: 2}
-  NewUnitSpawned: {fileID: 11400000, guid: a64f843baf8bd954ba44679727c1e23a, type: 2}
+  TriggerKey: 0
+  NewUnitCount: {fileID: 0}
+  NewUnitSpawned: {fileID: 0}
