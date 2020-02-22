@@ -13,6 +13,10 @@ public class GenerateMap3D : ScriptableObject, IReact
     [InlineEditor]
     public HeightRefiner HeightRefiner;
     [InlineEditor]
+    public SlopeMap SlopeMap;
+    [InlineEditor]
+    public RiverMap RiverMap;
+    [InlineEditor]
     public MapCellColors MapCellColors;
     [InlineEditor]
     public TerrainObjects TerrainObjects;

@@ -21,7 +21,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  Coords: {fileID: 11400000, guid: 2362169da36c7fa48ac68c848a520195, type: 2}
+  MapCoordinates: {fileID: 11400000, guid: d766e750db642dc40b2432251527f55f, type: 2}
   TerrainManager: {fileID: 0}
   terrainChunkPrefab: {fileID: 3628679289001975655, guid: c0c70e3af1308f543af82d201aa44382,
     type: 3}

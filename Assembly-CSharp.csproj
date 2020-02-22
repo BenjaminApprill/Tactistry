@@ -128,6 +128,7 @@
     <Compile Include="Assets\Script\Ref\Variable\Vector2Ref.cs" />
     <Compile Include="Assets\Script\Ref\Variable\Vector3Ref.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildMesh.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\BuildNeighborSlopes.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrain.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainHeightMesh.cs" />
     <Compile Include="Assets\Script\ScriptableObject\BuildTerrainOffsets.cs" />
@@ -171,6 +172,8 @@
     <Compile Include="Assets\Script\ScriptableObject\PlayerBeginsDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\PlayerEndsDragScroll.cs" />
     <Compile Include="Assets\Script\ScriptableObject\RandomStartingPoint.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\RiverMap.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\SlopeMap.cs" />
     <Compile Include="Assets\Script\ScriptableObject\SpawnNewUnit.cs" />
     <Compile Include="Assets\Script\ScriptableObject\TerrainCells.cs" />
     <Compile Include="Assets\Script\ScriptableObject\TerrainMeshes.cs" />
