@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9330891b23d47f0469cdaa2fcdd2859f, type: 3}
   m_Name: BuildTerrainOffsets
   m_EditorClassIdentifier: 
-  MapSize: {fileID: 0}
+  MapSize: {fileID: 11400000, guid: 4523a389541e756499072c0472b256fd, type: 2}

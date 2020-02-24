@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49bb989f3ba79f443a19cddc444cc252, type: 3}
   m_Name: MapCoordinates
   m_EditorClassIdentifier: 
-  MapWidth: {fileID: 0}
-  MapHeight: {fileID: 0}
-  TerrainChunks: {fileID: 0}
+  MapWidth: {fileID: 11400000, guid: 07b01930b3aef0d40952785c2d109bd6, type: 2}
+  MapHeight: {fileID: 11400000, guid: dbaf9d2a53f06214fb7f3d404c8d025e, type: 2}
+  TerrainChunks: {fileID: 11400000, guid: ef57243d95a6f8143a27ec618f098565, type: 2}

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9babebb367a4e4280656bd761d54ed, type: 3}
-  m_Name: CreateNewTerrainPosition
+  m_Script: {fileID: 11500000, guid: 0d06c19d652d8054785dd48331bf0fac, type: 3}
+  m_Name: TestRiverStart
   m_EditorClassIdentifier: 
-  MapSize: {fileID: 11400000, guid: 4523a389541e756499072c0472b256fd, type: 2}
+  Val: {x: 0, y: 0}

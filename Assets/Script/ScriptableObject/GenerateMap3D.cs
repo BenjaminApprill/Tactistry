@@ -38,6 +38,9 @@ public class GenerateMap3D : ScriptableObject, IReact
         //HeightRefiner.Refine();
         MeshHeightMap.Generate();
 
+        //SlopeMap.Build();
+        //RiverMap.Build();
+
         TerrainObjects.Generate();
         TerrainMeshes.Generate();
         TerrainTextures.Generate();

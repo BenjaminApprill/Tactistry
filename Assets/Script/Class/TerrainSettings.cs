@@ -27,5 +27,9 @@ public class TerrainSettings
     [InlineEditor]    
     public FloatRef OffsetZ;
     [InlineEditor]
+    public Vector2Ref TestRiverStart;
+    [InlineEditor]
+    public IntRef TestRiverLength;
+    [InlineEditor]
     public HeightEvaluationCurve HeightEvaluationCurve;
 }

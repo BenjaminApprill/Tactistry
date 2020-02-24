@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da71e380c89d7b74dbd7667cdcce5b68, type: 3}
   m_Name: GenerateMap3D
   m_EditorClassIdentifier: 
-  MapWidth: {fileID: 0}
-  MapHeight: {fileID: 0}
-  TerrainChunks: {fileID: 0}
-  MapCoordinates: {fileID: 0}
-  HeightMap: {fileID: 0}
-  MeshHeightMap: {fileID: 0}
-  HeightRefiner: {fileID: 0}
-  MapCellColors: {fileID: 0}
-  TerrainObjects: {fileID: 0}
-  TerrainMeshes: {fileID: 0}
-  TerrainTextures: {fileID: 0}
-  BuildTerrain: {fileID: 0}
+  MapCoordinates: {fileID: 11400000, guid: d766e750db642dc40b2432251527f55f, type: 2}
+  HeightMap: {fileID: 11400000, guid: b72d45232fb36384e9d3d6fb3a993992, type: 2}
+  MeshHeightMap: {fileID: 11400000, guid: e27905cdbaee50f49a10c123eaea4655, type: 2}
+  HeightRefiner: {fileID: 11400000, guid: bfe7d4d525bb4d245aa58bb37bdaab4a, type: 2}
+  SlopeMap: {fileID: 11400000, guid: f6966ea23297d8c4094b08c767542d5e, type: 2}
+  RiverMap: {fileID: 11400000, guid: ead984099160da24c8bf24db01bb62e0, type: 2}
+  MapCellColors: {fileID: 11400000, guid: 968235d34a3eb6545a81f606a34f111c, type: 2}
+  TerrainObjects: {fileID: 11400000, guid: e63a78df45777a440b5b8d21bf6238f0, type: 2}
+  TerrainMeshes: {fileID: 11400000, guid: f95507ff7b6bdc740b80e61393d9cc59, type: 2}
+  TerrainTextures: {fileID: 11400000, guid: bc485af7486dd914bac4c22fe1f877c6, type: 2}
+  BuildTerrain: {fileID: 11400000, guid: d61f17293a6396c4cbd5ef4448bfc442, type: 2}

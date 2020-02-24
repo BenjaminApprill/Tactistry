@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79eda6e8b309b14c837ebf758c70b68, type: 3}
   m_Name: RiverMap
   m_EditorClassIdentifier: 
+  Map: []
+  SlopeMap: {fileID: 11400000, guid: f6966ea23297d8c4094b08c767542d5e, type: 2}
+  startPos: {x: 20, y: 20}

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d18264598cd05e42b7820791ff29b36, type: 3}
   m_Name: TerrainTexture
   m_EditorClassIdentifier: 
-  MapWidth: {fileID: 0}
-  MapHeight: {fileID: 0}
-  TerrainChunkSize: {fileID: 0}
-  NoiseColors: {fileID: 0}
-  MapCellColors: {fileID: 0}
+  MapWidth: {fileID: 11400000, guid: 07b01930b3aef0d40952785c2d109bd6, type: 2}
+  MapHeight: {fileID: 11400000, guid: dbaf9d2a53f06214fb7f3d404c8d025e, type: 2}
+  TerrainChunkSize: {fileID: 11400000, guid: a79cc8b34fc1c684da89c74d410d05b5, type: 2}
+  NoiseColors: {fileID: 11400000, guid: c617e2487ac603640962d8c9b0700adc, type: 2}
+  MapCellColors: {fileID: 11400000, guid: 968235d34a3eb6545a81f606a34f111c, type: 2}

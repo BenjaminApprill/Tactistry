@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 185ff755e5e4dc24386d4be7d48712f6, type: 3}
   m_Name: MeshHeightMap
   m_EditorClassIdentifier: 
-  TerrainHeightAdjustment: {fileID: 0}
-  HeightMap: {fileID: 0}
-  HeightEvaluationCurve: {fileID: 0}
+  TerrainHeightAdjustment: {fileID: 11400000, guid: e1d8beaa542f5b54bac75ae7d3cbf93c,
+    type: 2}
+  HeightMap: {fileID: 11400000, guid: b72d45232fb36384e9d3d6fb3a993992, type: 2}
+  HeightEvaluationCurve: {fileID: 11400000, guid: 283522afe164d3149835545deeac1388,
+    type: 2}

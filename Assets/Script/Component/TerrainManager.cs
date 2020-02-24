@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TerrainManager : MonoBehaviour
 {
-    [OnValueChanged("MapUpdate", true)]    
+    [OnValueChanged("MapUpdate", true)]
     public TerrainSettings Settings;
 
     [OnValueChanged("MapUpdate", true)]
@@ -16,7 +16,7 @@ public class TerrainManager : MonoBehaviour
     public UpdateMap3D UpdateMap3D;
 
     void MapUpdate()
-    {        
+    {
         UpdateMap3D.MapUpdate();
     }
 }

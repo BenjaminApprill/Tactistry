@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 875242eac37f3484186a8f9c64f357c7, type: 3}
   m_Name: TerrainObjects
   m_EditorClassIdentifier: 
-  Array: []
-  GenerateTerrainObjects: {fileID: 0}
+  Array:
+  - {fileID: 0}
+  GenerateTerrainObjects: {fileID: 11400000, guid: 0e37457847955554ab36f2a85663f422,
+    type: 2}

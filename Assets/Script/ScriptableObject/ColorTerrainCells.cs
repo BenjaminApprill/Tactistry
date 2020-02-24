@@ -7,13 +7,19 @@ public class ColorTerrainCells : ScriptableObject
     public HeightMap HeightMap;
     [InlineEditor]
     public TerrainCells TerrainCells;
-    
+
+    public RiverMap RiverMap;
+
     int xLength;
     int zLength;
 
     Color[] colors;
     MapCellData currentCell;
     float currentHeight;
+
+    Vector2 currentCoord;
+    int currentX;
+    int currentY;
 
     public Color[] Build()
     {
@@ -38,8 +44,14 @@ public class ColorTerrainCells : ScriptableObject
                         break;
                     }
                 }
-
             }
+        }
+
+        for (int i = 0; i < RiverMap.Map.Length; i++)
+        {
+            currentCoord = RiverMap.Map[i];
+
+            colors[(int)(currentCoord.x + currentCoord.y * xLength)] = Color.blue;
         }
 
         return colors;

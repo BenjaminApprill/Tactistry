@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b618735b1011140ad7176867510197, type: 3}
   m_Name: GenerateHeightMap
   m_EditorClassIdentifier: 
-  MapWidth: {fileID: 0}
-  MapHeight: {fileID: 0}
-  TerrainChunkSize: {fileID: 0}
-  NoisePasses: {fileID: 0}
-  NoiseScale: {fileID: 0}
-  Isolation: {fileID: 0}
-  Constriction: {fileID: 0}
-  OffsetX: {fileID: 0}
-  OffsetZ: {fileID: 0}
+  MapXSize: {fileID: 11400000, guid: d1e279dcf99c7034e90b25a2a5c44c9f, type: 2}
+  MapZSize: {fileID: 11400000, guid: 612fef9105dd0e843a9791bef16cae60, type: 2}
+  NoisePasses: {fileID: 11400000, guid: b58f6ec2a827b124eae4c8ebca0e92a4, type: 2}
+  NoiseScale: {fileID: 11400000, guid: f08b7ef390467114dac1ee570ee48a72, type: 2}
+  Isolation: {fileID: 11400000, guid: ad3bcac20dbb784408345171907adbf3, type: 2}
+  Constriction: {fileID: 11400000, guid: 10fc0127481acd94898a6d23e2e0f130, type: 2}
+  OffsetX: {fileID: 11400000, guid: 0325af11e75596145acafa997447301d, type: 2}
+  OffsetZ: {fileID: 11400000, guid: 524a4aaa5092a7a47b55501cb591b960, type: 2}

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e714caff60905745836ab3417f1484e, type: 3}
   m_Name: GenerateNoiseColors
   m_EditorClassIdentifier: 
-  HeightMap: {fileID: 0}
+  HeightMap: {fileID: 11400000, guid: b72d45232fb36384e9d3d6fb3a993992, type: 2}

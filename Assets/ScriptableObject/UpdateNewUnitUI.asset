@@ -25,4 +25,4 @@ MonoBehaviour:
       Entry: 6
       Data: 
   NewUnitCountUI: {fileID: 0}
-  NewUnitCount: {fileID: 0}
+  NewUnitCount: {fileID: 11400000, guid: ad372b4a1ec693f478ca433e404f3bcc, type: 2}

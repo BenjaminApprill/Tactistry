@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217e0cfa1bc8ab94796f569aabae065c, type: 3}
   m_Name: TerrainName
   m_EditorClassIdentifier: 
-  MapCoords: {fileID: 0}
+  MapCoordinates: {fileID: 11400000, guid: d766e750db642dc40b2432251527f55f, type: 2}

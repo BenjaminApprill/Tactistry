@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6562c1676d3344eb2ef2d9ecd9c5fa, type: 3}
-  m_Name: RandomStartingPoint
+  m_Script: {fileID: 11500000, guid: 0eeaf809f9e9523418412384cdd57246, type: 3}
+  m_Name: SlopeMap
   m_EditorClassIdentifier: 
   MapXSize: {fileID: 11400000, guid: d1e279dcf99c7034e90b25a2a5c44c9f, type: 2}
   MapZSize: {fileID: 11400000, guid: 612fef9105dd0e843a9791bef16cae60, type: 2}

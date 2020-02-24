@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845997877a7dc7c42966d4638a748564, type: 3}
   m_Name: NewUnitTimer
   m_EditorClassIdentifier: 
-  NewUnitSpawnLimiter: {fileID: 0}
-  NewUnitAdded: {fileID: 0}
+  NewUnitSpawnLimiter: {fileID: 11400000, guid: 3f0d6fcb3d9f3d74daa3b012d4621a3a,
+    type: 2}
+  NewUnitAdded: {fileID: 11400000, guid: 8723102503376c1478c61913ff96dede, type: 2}

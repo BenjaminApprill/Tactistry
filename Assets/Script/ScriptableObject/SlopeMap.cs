@@ -8,25 +8,26 @@ public class SlopeMap: ScriptableObject
 
     public MeshHeightMap MeshHeightMap;
 
-    //public BuildNeighborSlopes BuildNeighborSlopes;
+    public Dictionary<Vector2, Dictionary<Vector2, float>> Map;
 
-    public Dictionary<Vector3, Dictionary<Vector3, float>> Map;
-
-    Dictionary<Vector3, float> neighborSlopes;
+    Dictionary<Vector2, float> neighborSlopes;
 
     Vector3 currentPoint;
     float currentHeight;
     float currentNeighborHeight;
+    Vector3 currentNeighborPoint;
+    Vector3 normalizedDirection;
 
     public void Build()
     {
-        Map = new Dictionary<Vector3, Dictionary<Vector3, float>>();
-        neighborSlopes = new Dictionary<Vector3, float>();
-
+        Map = new Dictionary<Vector2, Dictionary<Vector2, float>>();
+        
         for (int y = 0; y < MapZSize.Val; y++)
         {
             for (int x = 0; x < MapXSize.Val; x++)
             {
+                neighborSlopes = new Dictionary<Vector2, float>();
+
                 currentHeight = MeshHeightMap.Array[x, y];
                 currentPoint = new Vector3(x, currentHeight, y);
 
@@ -38,17 +39,18 @@ public class SlopeMap: ScriptableObject
                         {
                             continue;
                         }
-                        if(i >= 0 && j >= 0 && i <= MapXSize.Val && j <= MapZSize.Val)
+                        if(i >= 0 && j >= 0 && i < MapXSize.Val && j < MapZSize.Val)
                         {
                             currentNeighborHeight = MeshHeightMap.Array[i, j];
-                            //Vector3.Dot()
+                            currentNeighborPoint = new Vector3(i, currentNeighborHeight, j);
+                            normalizedDirection = (currentPoint - currentNeighborPoint).normalized;
+
+                            neighborSlopes.Add(new Vector2(i, j), normalizedDirection.y);
                         }
                     }
                 }
 
-                //neighborSlopes = BuildNeighborSlopes();
-
-                Map.Add(currentPoint, neighborSlopes);
+                Map.Add(new Vector2(x, y), neighborSlopes);
             }
         }
     }    

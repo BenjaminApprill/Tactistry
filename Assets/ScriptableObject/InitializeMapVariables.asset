@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de644d56eb6538b4fbe700058e7879cc, type: 3}
   m_Name: InitializeMapVariables
   m_EditorClassIdentifier: 
-  MapXSize: {fileID: 0}
-  MapZSize: {fileID: 0}
-  MapWidth: {fileID: 0}
-  MapHeight: {fileID: 0}
-  TerrainChunkSize: {fileID: 0}
-  TerrainChunks: {fileID: 0}
+  MapXSize: {fileID: 11400000, guid: d1e279dcf99c7034e90b25a2a5c44c9f, type: 2}
+  MapZSize: {fileID: 11400000, guid: 612fef9105dd0e843a9791bef16cae60, type: 2}
+  MapWidth: {fileID: 11400000, guid: 07b01930b3aef0d40952785c2d109bd6, type: 2}
+  MapHeight: {fileID: 11400000, guid: dbaf9d2a53f06214fb7f3d404c8d025e, type: 2}
+  TerrainChunkSize: {fileID: 11400000, guid: a79cc8b34fc1c684da89c74d410d05b5, type: 2}
+  TerrainChunks: {fileID: 11400000, guid: ef57243d95a6f8143a27ec618f098565, type: 2}

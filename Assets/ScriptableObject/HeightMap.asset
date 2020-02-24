@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5be59175451904fb548629a1df64d0, type: 3}
   m_Name: HeightMap
   m_EditorClassIdentifier: 
-  GenerateHeightMap: {fileID: 0}
+  GenerateHeightMap: {fileID: 11400000, guid: 35fbf4815eb92324aac5a08e9be0f027, type: 2}

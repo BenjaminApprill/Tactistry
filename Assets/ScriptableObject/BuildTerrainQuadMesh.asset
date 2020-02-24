@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa2b221a133a994aa7c06972930b05b, type: 3}
   m_Name: BuildTerrainQuadMesh
   m_EditorClassIdentifier: 
-  TerrainChunkSize: {fileID: 0}
-  BuildMesh: {fileID: 0}
-  BuildTerrainOffsets: {fileID: 0}
-  BuildTerrainHeightMesh: {fileID: 0}
+  TerrainChunkSize: {fileID: 11400000, guid: a79cc8b34fc1c684da89c74d410d05b5, type: 2}
+  BuildMesh: {fileID: 11400000, guid: c089061d150eb15448b2bc1a02ec910e, type: 2}
+  BuildTerrainOffsets: {fileID: 11400000, guid: 8ada0d1474396b84cbd98106a5a19579,
+    type: 2}
+  BuildTerrainHeightMesh: {fileID: 11400000, guid: 4ee56c2e39186204985c4fbdb3e6b5af,
+    type: 2}

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a621f4a93569264a8761a16ebea5230, type: 3}
   m_Name: BuildTerrainHeightMesh
   m_EditorClassIdentifier: 
-  TerrainChunkSize: {fileID: 0}
-  TerrainHeightAdjustment: {fileID: 0}
-  MapCoordinates: {fileID: 0}
-  MeshHeightMap: {fileID: 0}
+  TerrainChunkSize: {fileID: 11400000, guid: a79cc8b34fc1c684da89c74d410d05b5, type: 2}
+  TerrainHeightAdjustment: {fileID: 11400000, guid: e1d8beaa542f5b54bac75ae7d3cbf93c,
+    type: 2}
+  MapCoordinates: {fileID: 11400000, guid: d766e750db642dc40b2432251527f55f, type: 2}
+  MeshHeightMap: {fileID: 11400000, guid: e27905cdbaee50f49a10c123eaea4655, type: 2}
